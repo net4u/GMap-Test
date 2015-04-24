@@ -1,0 +1,590 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+  <!-- EF Runtime content -->
+  <edmx:Runtime>
+    <!-- SSDL content -->
+    <edmx:StorageModels>
+    <Schema Namespace="JobShopModel.Store" Provider="System.Data.SqlClient" ProviderManifestToken="2012" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+        <EntityType Name="AspNetUsers">
+          <Key>
+            <PropertyRef Name="Id" />
+          </Key>
+          <Property Name="Id" Type="nvarchar" MaxLength="128" Nullable="false" />
+          <Property Name="Email" Type="nvarchar" MaxLength="256" />
+          <Property Name="EmailConfirmed" Type="bit" Nullable="false" />
+          <Property Name="PasswordHash" Type="nvarchar(max)" />
+          <Property Name="SecurityStamp" Type="nvarchar(max)" />
+          <Property Name="PhoneNumber" Type="nvarchar(max)" />
+          <Property Name="PhoneNumberConfirmed" Type="bit" Nullable="false" />
+          <Property Name="TwoFactorEnabled" Type="bit" Nullable="false" />
+          <Property Name="LockoutEndDateUtc" Type="datetime" />
+          <Property Name="LockoutEnabled" Type="bit" Nullable="false" />
+          <Property Name="AccessFailedCount" Type="int" Nullable="false" />
+          <Property Name="UserName" Type="nvarchar" MaxLength="256" Nullable="false" />
+          <Property Name="Address" Type="nvarchar(max)" />
+          <Property Name="City" Type="nvarchar" MaxLength="30" />
+          <Property Name="Country" Type="int" />
+          <Property Name="Website" Type="nvarchar(max)" />
+          <Property Name="ThumbURL" Type="nvarchar(max)" />
+          <Property Name="ThumbImg" Type="image" />
+          <Property Name="Facebook" Type="nvarchar(max)" />
+          <Property Name="Twitter" Type="nvarchar(max)" />
+          <Property Name="GooglePlus" Type="nvarchar(max)" />
+          <Property Name="Dribble" Type="nvarchar(max)" />
+          <Property Name="Pinterest" Type="nvarchar(max)" />
+          <Property Name="LinkedIn" Type="nvarchar(max)" />
+          <Property Name="Favorited" Type="bit" />
+          <Property Name="Name" Type="nvarchar" MaxLength="30" />
+          <Property Name="Surname" Type="nvarchar" MaxLength="30" />
+          <Property Name="Title" Type="nvarchar(max)" />
+          <Property Name="BirthDate" Type="date" />
+        </EntityType>
+        <EntityType Name="Candidates">
+          <Key>
+            <PropertyRef Name="IdCV" />
+          </Key>
+          <Property Name="IdCV" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="User" Type="nvarchar" MaxLength="128" />
+          <Property Name="Experienta" Type="varchar(max)" />
+          <Property Name="DateAdd" Type="date" />
+          <Property Name="ImageSRC" Type="nvarchar(max)" />
+          <Property Name="Titlu" Type="nvarchar(max)" />
+          <Property Name="WhereWhat" Type="nvarchar(max)" />
+          <Property Name="Description" Type="nvarchar(max)" />
+          <Property Name="Content" Type="nvarchar(max)" />
+          <Property Name="Solicitare" Type="nvarchar(max)" />
+          <Property Name="Orar" Type="nvarchar(max)" />
+          <Property Name="MinSal" Type="float" />
+          <Property Name="MaxSal" Type="float" />
+          <Property Name="Localitate" Type="nvarchar(max)" />
+          <Property Name="Address" Type="nvarchar(max)" />
+          <Property Name="ZIP" Type="nvarchar" MaxLength="10" />
+          <Property Name="Latitudine" Type="float" />
+          <Property Name="Longitudine" Type="float" />
+          <Property Name="DateStart" Type="date" />
+          <Property Name="DateEnd" Type="date" />
+          <Property Name="Region" Type="nvarchar" MaxLength="30" />
+        </EntityType>
+        <EntityType Name="Jobs">
+          <Key>
+            <PropertyRef Name="IdJob" />
+          </Key>
+          <Property Name="IdJob" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="IdWho" Type="int" />
+          <Property Name="User" Type="nvarchar" MaxLength="128" />
+          <Property Name="DateAdd" Type="date" />
+          <Property Name="ImageSRC" Type="nvarchar(max)" />
+          <Property Name="ImagePath" Type="nvarchar(max)" />
+          <Property Name="Titlu" Type="nchar" MaxLength="64" />
+          <Property Name="WhereWhat" Type="nchar" MaxLength="128" />
+          <Property Name="Description" Type="nvarchar(max)" />
+          <Property Name="Content" Type="nvarchar(max)" />
+          <Property Name="Solicitare" Type="nvarchar(max)" />
+          <Property Name="DateStart" Type="date" />
+          <Property Name="DateEnd" Type="date" />
+          <Property Name="Orar" Type="nvarchar" MaxLength="30" />
+          <Property Name="Localitate" Type="nvarchar(max)" />
+          <Property Name="Address" Type="nvarchar(max)" />
+          <Property Name="Latitudine" Type="float" />
+          <Property Name="Longitudine" Type="float" />
+          <Property Name="ZIP" Type="nvarchar" MaxLength="10" />
+          <Property Name="Region" Type="nvarchar" MaxLength="30" />
+        </EntityType>
+        <EntityType Name="markers">
+          <Key>
+            <PropertyRef Name="id" />
+          </Key>
+          <Property Name="id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="name" Type="varchar" MaxLength="60" />
+          <Property Name="address" Type="varchar" MaxLength="80" />
+          <Property Name="latitudine" Type="float" />
+          <Property Name="longitudine" Type="float" />
+          <Property Name="ZIP" Type="varchar" MaxLength="10" />
+          <Property Name="informatii" Type="varchar(max)" />
+          <Property Name="site" Type="nvarchar" MaxLength="256" />
+          <Property Name="email" Type="nvarchar" MaxLength="30" />
+        </EntityType>
+        <Association Name="Candidates_fk">
+          <End Role="AspNetUsers" Type="Self.AspNetUsers" Multiplicity="0..1" />
+          <End Role="Candidates" Type="Self.Candidates" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="AspNetUsers">
+              <PropertyRef Name="Id" />
+            </Principal>
+            <Dependent Role="Candidates">
+              <PropertyRef Name="User" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="Jobs_fk">
+          <End Role="AspNetUsers" Type="Self.AspNetUsers" Multiplicity="0..1">
+            <OnDelete Action="Cascade" />
+          </End>
+          <End Role="Jobs" Type="Self.Jobs" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="AspNetUsers">
+              <PropertyRef Name="Id" />
+            </Principal>
+            <Dependent Role="Jobs">
+              <PropertyRef Name="User" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Function Name="DistanceBetween" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="true" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo" ReturnType="real">
+          <Parameter Name="Lat1" Type="real" Mode="In" />
+          <Parameter Name="Long1" Type="real" Mode="In" />
+          <Parameter Name="Lat2" Type="real" Mode="In" />
+          <Parameter Name="Long2" Type="real" Mode="In" />
+        </Function>
+        <Function Name="SearchByRadius" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+          <Parameter Name="distance" Type="float" Mode="In" />
+          <Parameter Name="lat" Type="float" Mode="In" />
+          <Parameter Name="long" Type="float" Mode="In" />
+        </Function>
+        <Function Name="SearchByRadiusCV" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+          <Parameter Name="distance" Type="float" Mode="In" />
+          <Parameter Name="lat" Type="float" Mode="In" />
+          <Parameter Name="long" Type="float" Mode="In" />
+        </Function>
+        <Function Name="SearchByRadiusJobs" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+          <Parameter Name="distance" Type="float" Mode="In" />
+          <Parameter Name="lat" Type="float" Mode="In" />
+          <Parameter Name="long" Type="float" Mode="In" />
+        </Function>
+        <EntityContainer Name="JobShopModelStoreContainer">
+          <EntitySet Name="AspNetUsers" EntityType="Self.AspNetUsers" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="Candidates" EntityType="Self.Candidates" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="Jobs" EntityType="Self.Jobs" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="markers" EntityType="Self.markers" Schema="dbo" store:Type="Tables" />
+          <AssociationSet Name="Candidates_fk" Association="Self.Candidates_fk">
+            <End Role="AspNetUsers" EntitySet="AspNetUsers" />
+            <End Role="Candidates" EntitySet="Candidates" />
+          </AssociationSet>
+          <AssociationSet Name="Jobs_fk" Association="Self.Jobs_fk">
+            <End Role="AspNetUsers" EntitySet="AspNetUsers" />
+            <End Role="Jobs" EntitySet="Jobs" />
+          </AssociationSet>
+        </EntityContainer>
+      </Schema></edmx:StorageModels>
+    <!-- CSDL content -->
+    <edmx:ConceptualModels>
+      <Schema Namespace="JobShopModel" Alias="Self" annotation:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
+        <EntityType Name="AspNetUsers">
+          <Key>
+            <PropertyRef Name="Id" />
+          </Key>
+          <Property Name="Id" Type="String" MaxLength="128" FixedLength="false" Unicode="true" Nullable="false" />
+          <Property Name="Email" Type="String" MaxLength="256" FixedLength="false" Unicode="true" />
+          <Property Name="EmailConfirmed" Type="Boolean" Nullable="false" />
+          <Property Name="PasswordHash" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+          <Property Name="SecurityStamp" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+          <Property Name="PhoneNumber" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+          <Property Name="PhoneNumberConfirmed" Type="Boolean" Nullable="false" />
+          <Property Name="TwoFactorEnabled" Type="Boolean" Nullable="false" />
+          <Property Name="LockoutEndDateUtc" Type="DateTime" Precision="3" />
+          <Property Name="LockoutEnabled" Type="Boolean" Nullable="false" />
+          <Property Name="AccessFailedCount" Type="Int32" Nullable="false" />
+          <Property Name="UserName" Type="String" MaxLength="256" FixedLength="false" Unicode="true" Nullable="false" />
+          <Property Name="Address" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+          <Property Name="City" Type="String" MaxLength="30" FixedLength="false" Unicode="true" />
+          <Property Name="Country" Type="Int32" />
+          <Property Name="Website" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+          <Property Name="ThumbURL" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+          <Property Name="ThumbImg" Type="Binary" MaxLength="Max" FixedLength="false" />
+          <Property Name="Facebook" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+          <Property Name="Twitter" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+          <Property Name="GooglePlus" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+          <Property Name="Dribble" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+          <Property Name="Pinterest" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+          <Property Name="LinkedIn" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+          <Property Name="Favorited" Type="Boolean" />
+          <Property Name="Name" Type="String" MaxLength="30" FixedLength="false" Unicode="true" />
+          <Property Name="Surname" Type="String" MaxLength="30" FixedLength="false" Unicode="true" />
+          <Property Name="Title" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+          <Property Name="BirthDate" Type="DateTime" Precision="0" />
+          <NavigationProperty Name="Candidates" Relationship="Self.Candidates_fk" FromRole="AspNetUsers" ToRole="Candidates" />
+          <NavigationProperty Name="Jobs" Relationship="Self.Jobs_fk" FromRole="AspNetUsers" ToRole="Jobs" />
+        </EntityType>
+        <EntityType Name="Candidates">
+          <Key>
+            <PropertyRef Name="IdCV" />
+          </Key>
+          <Property Name="IdCV" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="User" Type="String" MaxLength="128" FixedLength="false" Unicode="true" />
+          <Property Name="Experienta" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+          <Property Name="DateAdd" Type="DateTime" Precision="0" />
+          <Property Name="ImageSRC" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+          <Property Name="Titlu" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+          <Property Name="WhereWhat" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+          <Property Name="Description" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+          <Property Name="Content" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+          <Property Name="Solicitare" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+          <Property Name="Orar" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+          <Property Name="MinSal" Type="Double" />
+          <Property Name="MaxSal" Type="Double" />
+          <Property Name="Localitate" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+          <Property Name="Address" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+          <Property Name="ZIP" Type="String" MaxLength="10" FixedLength="false" Unicode="true" />
+          <Property Name="Latitudine" Type="Double" />
+          <Property Name="Longitudine" Type="Double" />
+          <Property Name="DateStart" Type="DateTime" Precision="0" />
+          <Property Name="DateEnd" Type="DateTime" Precision="0" />
+          <Property Name="Region" Type="String" MaxLength="30" FixedLength="false" Unicode="true" />
+          <NavigationProperty Name="AspNetUsers" Relationship="Self.Candidates_fk" FromRole="Candidates" ToRole="AspNetUsers" />
+        </EntityType>
+        <EntityType Name="Jobs">
+          <Key>
+            <PropertyRef Name="IdJob" />
+          </Key>
+          <Property Name="IdJob" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="IdWho" Type="Int32" />
+          <Property Name="User" Type="String" MaxLength="128" FixedLength="false" Unicode="true" />
+          <Property Name="DateAdd" Type="DateTime" Precision="0" />
+          <Property Name="ImageSRC" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+          <Property Name="Titlu" Type="String" MaxLength="64" FixedLength="true" Unicode="true" />
+          <Property Name="WhereWhat" Type="String" MaxLength="128" FixedLength="true" Unicode="true" />
+          <Property Name="Description" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+          <Property Name="Content" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+          <Property Name="Solicitare" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+          <Property Name="DateStart" Type="DateTime" Precision="0" />
+          <Property Name="DateEnd" Type="DateTime" Precision="0" />
+          <Property Name="Orar" Type="String" MaxLength="30" FixedLength="false" Unicode="true" />
+          <Property Name="Localitate" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+          <Property Name="Address" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+          <Property Name="Latitudine" Type="Double" />
+          <Property Name="Longitudine" Type="Double" />
+          <Property Name="ZIP" Type="String" MaxLength="10" FixedLength="false" Unicode="true" />
+          <Property Name="Region" Type="String" MaxLength="30" FixedLength="false" Unicode="true" />
+          <NavigationProperty Name="AspNetUsers" Relationship="Self.Jobs_fk" FromRole="Jobs" ToRole="AspNetUsers" />
+          <Property Name="ImagePath" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+        </EntityType>
+        <EntityType Name="markers">
+          <Key>
+            <PropertyRef Name="id" />
+          </Key>
+          <Property Name="id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="name" Type="String" MaxLength="60" FixedLength="false" Unicode="false" />
+          <Property Name="address" Type="String" MaxLength="80" FixedLength="false" Unicode="false" />
+          <Property Name="latitudine" Type="Double" />
+          <Property Name="longitudine" Type="Double" />
+          <Property Name="ZIP" Type="String" MaxLength="10" FixedLength="false" Unicode="false" />
+          <Property Name="informatii" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+          <Property Name="site" Type="String" MaxLength="256" FixedLength="false" Unicode="true" />
+          <Property Name="email" Type="String" MaxLength="30" FixedLength="false" Unicode="true" />
+        </EntityType>
+        <Association Name="Candidates_fk">
+          <End Role="AspNetUsers" Type="Self.AspNetUsers" Multiplicity="0..1" />
+          <End Role="Candidates" Type="Self.Candidates" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="AspNetUsers">
+              <PropertyRef Name="Id" />
+            </Principal>
+            <Dependent Role="Candidates">
+              <PropertyRef Name="User" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="Jobs_fk">
+          <End Role="AspNetUsers" Type="Self.AspNetUsers" Multiplicity="0..1">
+            <OnDelete Action="Cascade" />
+          </End>
+          <End Role="Jobs" Type="Self.Jobs" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="AspNetUsers">
+              <PropertyRef Name="Id" />
+            </Principal>
+            <Dependent Role="Jobs">
+              <PropertyRef Name="User" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <EntityContainer Name="babysitterEntities" annotation:LazyLoadingEnabled="true">
+          <EntitySet Name="AspNetUsers" EntityType="Self.AspNetUsers" />
+          <EntitySet Name="Candidates" EntityType="Self.Candidates" />
+          <EntitySet Name="Jobs" EntityType="Self.Jobs" />
+          <EntitySet Name="markers" EntityType="Self.markers" />
+          <AssociationSet Name="Candidates_fk" Association="Self.Candidates_fk">
+            <End Role="AspNetUsers" EntitySet="AspNetUsers" />
+            <End Role="Candidates" EntitySet="Candidates" />
+          </AssociationSet>
+          <AssociationSet Name="Jobs_fk" Association="Self.Jobs_fk">
+            <End Role="AspNetUsers" EntitySet="AspNetUsers" />
+            <End Role="Jobs" EntitySet="Jobs" />
+          </AssociationSet>
+          <FunctionImport Name="SearchByRadius" ReturnType="Collection(JobShopModel.SearchByRadius_Result)">
+            <Parameter Name="distance" Mode="In" Type="Double" />
+            <Parameter Name="lat" Mode="In" Type="Double" />
+            <Parameter Name="long" Mode="In" Type="Double" />
+          </FunctionImport>
+          <FunctionImport Name="SearchByRadiusCV" ReturnType="Collection(JobShopModel.SearchByRadiusCV_Result)">
+            <Parameter Name="distance" Mode="In" Type="Double" />
+            <Parameter Name="lat" Mode="In" Type="Double" />
+            <Parameter Name="long" Mode="In" Type="Double" />
+          </FunctionImport>
+          <FunctionImport Name="SearchByRadiusJobs" ReturnType="Collection(JobShopModel.SearchByRadiusJobs_Result)">
+            <Parameter Name="distance" Mode="In" Type="Double" />
+            <Parameter Name="lat" Mode="In" Type="Double" />
+            <Parameter Name="long" Mode="In" Type="Double" />
+          </FunctionImport>
+        </EntityContainer>
+        <ComplexType Name="SearchByRadius_Result">
+          <Property Type="Double" Name="Distance" Nullable="true" />
+          <Property Type="Int32" Name="id" Nullable="false" />
+          <Property Type="String" Name="name" Nullable="true" MaxLength="60" />
+          <Property Type="String" Name="address" Nullable="true" MaxLength="80" />
+          <Property Type="Double" Name="latitudine" Nullable="true" />
+          <Property Type="Double" Name="longitudine" Nullable="true" />
+          <Property Type="String" Name="ZIP" Nullable="true" MaxLength="10" />
+          <Property Type="String" Name="informatii" Nullable="true" />
+          <Property Type="String" Name="site" Nullable="true" MaxLength="256" />
+          <Property Type="String" Name="email" Nullable="true" MaxLength="30" />
+        </ComplexType>
+        <ComplexType Name="SearchByRadiusCV_Result">
+          <Property Type="Double" Name="Distance" Nullable="true" />
+          <Property Type="Int32" Name="IdCV" Nullable="false" />
+          <Property Type="String" Name="User" Nullable="true" MaxLength="128" />
+          <Property Type="String" Name="Experienta" Nullable="true" />
+          <Property Type="DateTime" Name="DateAdd" Nullable="true" />
+          <Property Type="String" Name="ImageSRC" Nullable="true" />
+          <Property Type="String" Name="Titlu" Nullable="true" />
+          <Property Type="String" Name="WhereWhat" Nullable="true" />
+          <Property Type="String" Name="Description" Nullable="true" />
+          <Property Type="String" Name="Content" Nullable="true" />
+          <Property Type="String" Name="Solicitare" Nullable="true" />
+          <Property Type="String" Name="Orar" Nullable="true" />
+          <Property Type="Double" Name="MinSal" Nullable="true" />
+          <Property Type="Double" Name="MaxSal" Nullable="true" />
+          <Property Type="String" Name="Localitate" Nullable="true" />
+          <Property Type="String" Name="Address" Nullable="true" />
+          <Property Type="String" Name="ZIP" Nullable="true" MaxLength="10" />
+          <Property Type="Double" Name="Latitudine" Nullable="true" />
+          <Property Type="Double" Name="Longitudine" Nullable="true" />
+          <Property Type="DateTime" Name="DateStart" Nullable="true" />
+          <Property Type="DateTime" Name="DateEnd" Nullable="true" />
+          <Property Type="String" Name="Region" Nullable="true" MaxLength="30" />
+        </ComplexType>
+        <ComplexType Name="SearchByRadiusJobs_Result">
+          <Property Type="Double" Name="Distance" Nullable="true" />
+          <Property Type="Int32" Name="IdJob" Nullable="false" />
+          <Property Type="Int32" Name="IdWho" Nullable="true" />
+          <Property Type="String" Name="User" Nullable="true" MaxLength="128" />
+          <Property Type="DateTime" Name="DateAdd" Nullable="true" />
+          <Property Type="String" Name="ImageSRC" Nullable="true" />
+          <Property Type="String" Name="Titlu" Nullable="true" MaxLength="64" />
+          <Property Type="String" Name="WhereWhat" Nullable="true" MaxLength="128" />
+          <Property Type="String" Name="Description" Nullable="true" />
+          <Property Type="String" Name="Content" Nullable="true" />
+          <Property Type="String" Name="Solicitare" Nullable="true" />
+          <Property Type="DateTime" Name="DateStart" Nullable="true" />
+          <Property Type="DateTime" Name="DateEnd" Nullable="true" />
+          <Property Type="String" Name="Orar" Nullable="true" MaxLength="30" />
+          <Property Type="String" Name="Localitate" Nullable="true" />
+          <Property Type="String" Name="Address" Nullable="true" />
+          <Property Type="Double" Name="Latitudine" Nullable="true" />
+          <Property Type="Double" Name="Longitudine" Nullable="true" />
+          <Property Type="String" Name="ZIP" Nullable="true" MaxLength="10" />
+          <Property Type="String" Name="Region" Nullable="true" MaxLength="30" />
+        </ComplexType>
+      </Schema>
+    </edmx:ConceptualModels>
+    <!-- C-S mapping content -->
+    <edmx:Mappings>
+      <Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+        <EntityContainerMapping StorageEntityContainer="JobShopModelStoreContainer" CdmEntityContainer="babysitterEntities">
+          <EntitySetMapping Name="AspNetUsers">
+            <EntityTypeMapping TypeName="JobShopModel.AspNetUsers">
+              <MappingFragment StoreEntitySet="AspNetUsers">
+                <ScalarProperty Name="Id" ColumnName="Id" />
+                <ScalarProperty Name="Email" ColumnName="Email" />
+                <ScalarProperty Name="EmailConfirmed" ColumnName="EmailConfirmed" />
+                <ScalarProperty Name="PasswordHash" ColumnName="PasswordHash" />
+                <ScalarProperty Name="SecurityStamp" ColumnName="SecurityStamp" />
+                <ScalarProperty Name="PhoneNumber" ColumnName="PhoneNumber" />
+                <ScalarProperty Name="PhoneNumberConfirmed" ColumnName="PhoneNumberConfirmed" />
+                <ScalarProperty Name="TwoFactorEnabled" ColumnName="TwoFactorEnabled" />
+                <ScalarProperty Name="LockoutEndDateUtc" ColumnName="LockoutEndDateUtc" />
+                <ScalarProperty Name="LockoutEnabled" ColumnName="LockoutEnabled" />
+                <ScalarProperty Name="AccessFailedCount" ColumnName="AccessFailedCount" />
+                <ScalarProperty Name="UserName" ColumnName="UserName" />
+                <ScalarProperty Name="Address" ColumnName="Address" />
+                <ScalarProperty Name="City" ColumnName="City" />
+                <ScalarProperty Name="Country" ColumnName="Country" />
+                <ScalarProperty Name="Website" ColumnName="Website" />
+                <ScalarProperty Name="ThumbURL" ColumnName="ThumbURL" />
+                <ScalarProperty Name="ThumbImg" ColumnName="ThumbImg" />
+                <ScalarProperty Name="Facebook" ColumnName="Facebook" />
+                <ScalarProperty Name="Twitter" ColumnName="Twitter" />
+                <ScalarProperty Name="GooglePlus" ColumnName="GooglePlus" />
+                <ScalarProperty Name="Dribble" ColumnName="Dribble" />
+                <ScalarProperty Name="Pinterest" ColumnName="Pinterest" />
+                <ScalarProperty Name="LinkedIn" ColumnName="LinkedIn" />
+                <ScalarProperty Name="Favorited" ColumnName="Favorited" />
+                <ScalarProperty Name="Name" ColumnName="Name" />
+                <ScalarProperty Name="Surname" ColumnName="Surname" />
+                <ScalarProperty Name="Title" ColumnName="Title" />
+                <ScalarProperty Name="BirthDate" ColumnName="BirthDate" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="Candidates">
+            <EntityTypeMapping TypeName="JobShopModel.Candidates">
+              <MappingFragment StoreEntitySet="Candidates">
+                <ScalarProperty Name="IdCV" ColumnName="IdCV" />
+                <ScalarProperty Name="User" ColumnName="User" />
+                <ScalarProperty Name="Experienta" ColumnName="Experienta" />
+                <ScalarProperty Name="DateAdd" ColumnName="DateAdd" />
+                <ScalarProperty Name="ImageSRC" ColumnName="ImageSRC" />
+                <ScalarProperty Name="Titlu" ColumnName="Titlu" />
+                <ScalarProperty Name="WhereWhat" ColumnName="WhereWhat" />
+                <ScalarProperty Name="Description" ColumnName="Description" />
+                <ScalarProperty Name="Content" ColumnName="Content" />
+                <ScalarProperty Name="Solicitare" ColumnName="Solicitare" />
+                <ScalarProperty Name="Orar" ColumnName="Orar" />
+                <ScalarProperty Name="MinSal" ColumnName="MinSal" />
+                <ScalarProperty Name="MaxSal" ColumnName="MaxSal" />
+                <ScalarProperty Name="Localitate" ColumnName="Localitate" />
+                <ScalarProperty Name="Address" ColumnName="Address" />
+                <ScalarProperty Name="ZIP" ColumnName="ZIP" />
+                <ScalarProperty Name="Latitudine" ColumnName="Latitudine" />
+                <ScalarProperty Name="Longitudine" ColumnName="Longitudine" />
+                <ScalarProperty Name="DateStart" ColumnName="DateStart" />
+                <ScalarProperty Name="DateEnd" ColumnName="DateEnd" />
+                <ScalarProperty Name="Region" ColumnName="Region" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="Jobs">
+            <EntityTypeMapping TypeName="JobShopModel.Jobs">
+              <MappingFragment StoreEntitySet="Jobs">
+                <ScalarProperty Name="ImagePath" ColumnName="ImagePath" />
+                <ScalarProperty Name="IdJob" ColumnName="IdJob" />
+                <ScalarProperty Name="IdWho" ColumnName="IdWho" />
+                <ScalarProperty Name="User" ColumnName="User" />
+                <ScalarProperty Name="DateAdd" ColumnName="DateAdd" />
+                <ScalarProperty Name="ImageSRC" ColumnName="ImageSRC" />
+                <ScalarProperty Name="Titlu" ColumnName="Titlu" />
+                <ScalarProperty Name="WhereWhat" ColumnName="WhereWhat" />
+                <ScalarProperty Name="Description" ColumnName="Description" />
+                <ScalarProperty Name="Content" ColumnName="Content" />
+                <ScalarProperty Name="Solicitare" ColumnName="Solicitare" />
+                <ScalarProperty Name="DateStart" ColumnName="DateStart" />
+                <ScalarProperty Name="DateEnd" ColumnName="DateEnd" />
+                <ScalarProperty Name="Orar" ColumnName="Orar" />
+                <ScalarProperty Name="Localitate" ColumnName="Localitate" />
+                <ScalarProperty Name="Address" ColumnName="Address" />
+                <ScalarProperty Name="Latitudine" ColumnName="Latitudine" />
+                <ScalarProperty Name="Longitudine" ColumnName="Longitudine" />
+                <ScalarProperty Name="ZIP" ColumnName="ZIP" />
+                <ScalarProperty Name="Region" ColumnName="Region" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="markers">
+            <EntityTypeMapping TypeName="JobShopModel.markers">
+              <MappingFragment StoreEntitySet="markers">
+                <ScalarProperty Name="id" ColumnName="id" />
+                <ScalarProperty Name="name" ColumnName="name" />
+                <ScalarProperty Name="address" ColumnName="address" />
+                <ScalarProperty Name="latitudine" ColumnName="latitudine" />
+                <ScalarProperty Name="longitudine" ColumnName="longitudine" />
+                <ScalarProperty Name="ZIP" ColumnName="ZIP" />
+                <ScalarProperty Name="informatii" ColumnName="informatii" />
+                <ScalarProperty Name="site" ColumnName="site" />
+                <ScalarProperty Name="email" ColumnName="email" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <FunctionImportMapping FunctionImportName="SearchByRadius" FunctionName="JobShopModel.Store.SearchByRadius">
+            <ResultMapping>
+              <ComplexTypeMapping TypeName="JobShopModel.SearchByRadius_Result">
+                <ScalarProperty Name="Distance" ColumnName="Distance" />
+                <ScalarProperty Name="id" ColumnName="id" />
+                <ScalarProperty Name="name" ColumnName="name" />
+                <ScalarProperty Name="address" ColumnName="address" />
+                <ScalarProperty Name="latitudine" ColumnName="latitudine" />
+                <ScalarProperty Name="longitudine" ColumnName="longitudine" />
+                <ScalarProperty Name="ZIP" ColumnName="ZIP" />
+                <ScalarProperty Name="informatii" ColumnName="informatii" />
+                <ScalarProperty Name="site" ColumnName="site" />
+                <ScalarProperty Name="email" ColumnName="email" />
+              </ComplexTypeMapping>
+            </ResultMapping>
+          </FunctionImportMapping>
+          <FunctionImportMapping FunctionImportName="SearchByRadiusCV" FunctionName="JobShopModel.Store.SearchByRadiusCV">
+            <ResultMapping>
+              <ComplexTypeMapping TypeName="JobShopModel.SearchByRadiusCV_Result">
+                <ScalarProperty Name="Distance" ColumnName="Distance" />
+                <ScalarProperty Name="IdCV" ColumnName="IdCV" />
+                <ScalarProperty Name="User" ColumnName="User" />
+                <ScalarProperty Name="Experienta" ColumnName="Experienta" />
+                <ScalarProperty Name="DateAdd" ColumnName="DateAdd" />
+                <ScalarProperty Name="ImageSRC" ColumnName="ImageSRC" />
+                <ScalarProperty Name="Titlu" ColumnName="Titlu" />
+                <ScalarProperty Name="WhereWhat" ColumnName="WhereWhat" />
+                <ScalarProperty Name="Description" ColumnName="Description" />
+                <ScalarProperty Name="Content" ColumnName="Content" />
+                <ScalarProperty Name="Solicitare" ColumnName="Solicitare" />
+                <ScalarProperty Name="Orar" ColumnName="Orar" />
+                <ScalarProperty Name="MinSal" ColumnName="MinSal" />
+                <ScalarProperty Name="MaxSal" ColumnName="MaxSal" />
+                <ScalarProperty Name="Localitate" ColumnName="Localitate" />
+                <ScalarProperty Name="Address" ColumnName="Address" />
+                <ScalarProperty Name="ZIP" ColumnName="ZIP" />
+                <ScalarProperty Name="Latitudine" ColumnName="Latitudine" />
+                <ScalarProperty Name="Longitudine" ColumnName="Longitudine" />
+                <ScalarProperty Name="DateStart" ColumnName="DateStart" />
+                <ScalarProperty Name="DateEnd" ColumnName="DateEnd" />
+                <ScalarProperty Name="Region" ColumnName="Region" />
+              </ComplexTypeMapping>
+            </ResultMapping>
+          </FunctionImportMapping>
+          <FunctionImportMapping FunctionImportName="SearchByRadiusJobs" FunctionName="JobShopModel.Store.SearchByRadiusJobs">
+            <ResultMapping>
+              <ComplexTypeMapping TypeName="JobShopModel.SearchByRadiusJobs_Result">
+                <ScalarProperty Name="Distance" ColumnName="Distance" />
+                <ScalarProperty Name="IdJob" ColumnName="IdJob" />
+                <ScalarProperty Name="IdWho" ColumnName="IdWho" />
+                <ScalarProperty Name="User" ColumnName="User" />
+                <ScalarProperty Name="DateAdd" ColumnName="DateAdd" />
+                <ScalarProperty Name="ImageSRC" ColumnName="ImageSRC" />
+                <ScalarProperty Name="Titlu" ColumnName="Titlu" />
+                <ScalarProperty Name="WhereWhat" ColumnName="WhereWhat" />
+                <ScalarProperty Name="Description" ColumnName="Description" />
+                <ScalarProperty Name="Content" ColumnName="Content" />
+                <ScalarProperty Name="Solicitare" ColumnName="Solicitare" />
+                <ScalarProperty Name="DateStart" ColumnName="DateStart" />
+                <ScalarProperty Name="DateEnd" ColumnName="DateEnd" />
+                <ScalarProperty Name="Orar" ColumnName="Orar" />
+                <ScalarProperty Name="Localitate" ColumnName="Localitate" />
+                <ScalarProperty Name="Address" ColumnName="Address" />
+                <ScalarProperty Name="Latitudine" ColumnName="Latitudine" />
+                <ScalarProperty Name="Longitudine" ColumnName="Longitudine" />
+                <ScalarProperty Name="ZIP" ColumnName="ZIP" />
+                <ScalarProperty Name="Region" ColumnName="Region" />
+              </ComplexTypeMapping>
+            </ResultMapping>
+          </FunctionImportMapping>
+        </EntityContainerMapping>
+      </Mapping>
+    </edmx:Mappings>
+  </edmx:Runtime>
+  <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <Connection>
+      <DesignerInfoPropertySet>
+        <DesignerProperty Name="MetadataArtifactProcessing" Value="EmbedInOutputAssembly" />
+      </DesignerInfoPropertySet>
+    </Connection>
+    <Options>
+      <DesignerInfoPropertySet>
+        <DesignerProperty Name="ValidateOnBuild" Value="true" />
+        <DesignerProperty Name="EnablePluralization" Value="false" />
+        <DesignerProperty Name="IncludeForeignKeysInModel" Value="true" />
+        <DesignerProperty Name="UseLegacyProvider" Value="false" />
+        <DesignerProperty Name="CodeGenerationStrategy" Value="None" />
+      </DesignerInfoPropertySet>
+    </Options>
+    <!-- Diagram content (shape and connector positions) -->
+    <Diagrams></Diagrams>
+  </Designer>
+</edmx:Edmx>
