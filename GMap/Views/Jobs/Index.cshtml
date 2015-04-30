@@ -11,8 +11,9 @@
 }
 
 <h2>Index</h2>
-
-@{ Html.GoogleMap()
+<hr/>
+<div class="effect8">
+    @{ Html.GoogleMap()
                 .Name("map")
                 .Height(600)
                 .Center(c => c.Latitude(40)
@@ -27,7 +28,7 @@
                                     marker.Latitude = Jobs.Latitudine;
                                     marker.Longitude = Jobs.Longitudine;
                                     marker.Title = Jobs.Titlu;
-                                    
+
                                     marker.Icon = new MarkerImage(String.Format("~/Images/flags/{0}", Jobs.ImagePath)
                                                                     , new Size(18, 12)
                                                                     , new Point(0, 0)
@@ -37,21 +38,19 @@
                                                     {
                                                         Template =
                                                         {
-                                                            Content = () => ViewContext.Writer.Write(Jobs.InfoWindowContent)
+                                                            Content = () => ViewContext.Writer.Write(Jobs.Titlu)
                                                         }
                                                     };
                                 }
                             )
                         )
                 ).Render();
-}
+    }
+</div>
 
+<hr/>
 
-
-
-<p>
-    @Html.ActionLink("Create New", "Create")
-</p>
+<h3>Dataset that we want to display from Jobs</h3>
 <table class="table">
     <tr>
         <th>
@@ -61,31 +60,7 @@
             @Html.DisplayNameFor(model => model.DateAdd)
         </th>
         <th>
-            @Html.DisplayNameFor(model => model.ImageSRC)
-        </th>
-        <th>
             @Html.DisplayNameFor(model => model.Titlu)
-        </th>
-        <th>
-            @Html.DisplayNameFor(model => model.WhereWhat)
-        </th>
-        <th>
-            @Html.DisplayNameFor(model => model.Description)
-        </th>
-        <th>
-            @Html.DisplayNameFor(model => model.Content)
-        </th>
-        <th>
-            @Html.DisplayNameFor(model => model.Solicitare)
-        </th>
-        <th>
-            @Html.DisplayNameFor(model => model.DateStart)
-        </th>
-        <th>
-            @Html.DisplayNameFor(model => model.DateEnd)
-        </th>
-        <th>
-            @Html.DisplayNameFor(model => model.Orar)
         </th>
         <th>
             @Html.DisplayNameFor(model => model.Localitate)
@@ -105,9 +80,6 @@
         <th>
             @Html.DisplayNameFor(model => model.Region)
         </th>
-        <th>
-            @Html.DisplayNameFor(model => model.AspNetUsers.Email)
-        </th>
         <th></th>
     </tr>
 
@@ -120,31 +92,7 @@
             @Html.DisplayFor(modelItem => item.DateAdd)
         </td>
         <td>
-            @Html.DisplayFor(modelItem => item.ImageSRC)
-        </td>
-        <td>
             @Html.DisplayFor(modelItem => item.Titlu)
-        </td>
-        <td>
-            @Html.DisplayFor(modelItem => item.WhereWhat)
-        </td>
-        <td>
-            @Html.DisplayFor(modelItem => item.Description)
-        </td>
-        <td>
-            @Html.DisplayFor(modelItem => item.Content)
-        </td>
-        <td>
-            @Html.DisplayFor(modelItem => item.Solicitare)
-        </td>
-        <td>
-            @Html.DisplayFor(modelItem => item.DateStart)
-        </td>
-        <td>
-            @Html.DisplayFor(modelItem => item.DateEnd)
-        </td>
-        <td>
-            @Html.DisplayFor(modelItem => item.Orar)
         </td>
         <td>
             @Html.DisplayFor(modelItem => item.Localitate)
@@ -163,9 +111,6 @@
         </td>
         <td>
             @Html.DisplayFor(modelItem => item.Region)
-        </td>
-        <td>
-            @Html.DisplayFor(modelItem => item.AspNetUsers.Email)
         </td>
         <td>
             @Html.ActionLink("Edit", "Edit", new { id=item.IdJob }) |

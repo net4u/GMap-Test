@@ -27,6 +27,5 @@ C:\Users\Laurentiu\Documents\GitHub\GMap-Test\Jmelosegui.Mvc.Googlemap\bin\Debug
 C:\Users\Laurentiu\Documents\GitHub\GMap-Test\Jmelosegui.Mvc.Googlemap\bin\Debug\Antlr3.Runtime.pdb
 C:\Users\Laurentiu\Documents\GitHub\GMap-Test\Jmelosegui.Mvc.Googlemap\bin\Debug\Newtonsoft.Json.xml
 C:\Users\Laurentiu\Documents\GitHub\GMap-Test\Jmelosegui.Mvc.Googlemap\bin\Debug\System.Web.Optimization.xml
-C:\Users\Laurentiu\Documents\GitHub\GMap-Test\Jmelosegui.Mvc.Googlemap\obj\Debug\Jmelosegui.Mvc.Googlemap.csprojResolveAssemblyReference.cache
 C:\Users\Laurentiu\Documents\GitHub\GMap-Test\Jmelosegui.Mvc.Googlemap\obj\Debug\Jmelosegui.Mvc.Googlemap.dll
 C:\Users\Laurentiu\Documents\GitHub\GMap-Test\Jmelosegui.Mvc.Googlemap\obj\Debug\Jmelosegui.Mvc.Googlemap.pdb

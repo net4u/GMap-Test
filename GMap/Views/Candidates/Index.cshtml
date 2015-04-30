@@ -1,14 +1,57 @@
-﻿@model IEnumerable<GMap.Models.Candidates>
+﻿@using System.Drawing
+@using GMap.Models
+@using GMap.Extensions
+@using Jmelosegui.Mvc.Googlemap
+@using Jmelosegui.Mvc.Googlemap.Overlays
+
+@model IEnumerable<GMap.Models.Candidates>
 
 @{
     ViewBag.Title = "Index";
 }
 
 <h2>Index</h2>
+<hr/>
+<div class="effect8">
+    @{ Html.GoogleMap()
+                .Name("map")
+                .Height(600)
+                .Center(c => c.Latitude(40)
+                              .Longitude(-3))
+                .BindTo<GMap.Models.Candidates, Marker>
+                (Model, mappings => mappings.For<GMap.Models.Candidates>
+                        (
+                            binding => binding.ItemDataBound
+                            (
+                                (marker, Candidates) =>
+                                {
+                                    marker.Latitude = Candidates.Latitudine;
+                                    marker.Longitude = Candidates.Longitudine;
+                                    marker.Title = Candidates.Titlu;
 
-<p>
-    @Html.ActionLink("Create New", "Create")
-</p>
+                                    marker.Icon = new MarkerImage(String.Format("~/Images/flags/{0}", Candidates.ImageSRC)
+                                                                    , new Size(18, 12)
+                                                                    , new Point(0, 0)
+                                                                    , new Point(0, 12));
+
+                                    marker.Window = new InfoWindow(marker)
+                                                    {
+                                                        Template =
+                                                        {
+                                                            Content = () => ViewContext.Writer.Write(Candidates.Titlu)
+                                                        }
+                                                    };
+                                }
+                            )
+                        )
+                ).Render();
+    }
+</div>
+<hr/>
+
+
+
+<h3>Dataset that we want to display from Candidates</h3>
 <table class="table">
     <tr>
         <th>
@@ -22,27 +65,6 @@
         </th>
         <th>
             @Html.DisplayNameFor(model => model.Titlu)
-        </th>
-        <th>
-            @Html.DisplayNameFor(model => model.WhereWhat)
-        </th>
-        <th>
-            @Html.DisplayNameFor(model => model.Description)
-        </th>
-        <th>
-            @Html.DisplayNameFor(model => model.Content)
-        </th>
-        <th>
-            @Html.DisplayNameFor(model => model.Solicitare)
-        </th>
-        <th>
-            @Html.DisplayNameFor(model => model.Orar)
-        </th>
-        <th>
-            @Html.DisplayNameFor(model => model.MinSal)
-        </th>
-        <th>
-            @Html.DisplayNameFor(model => model.MaxSal)
         </th>
         <th>
             @Html.DisplayNameFor(model => model.Localitate)
@@ -60,16 +82,7 @@
             @Html.DisplayNameFor(model => model.Longitudine)
         </th>
         <th>
-            @Html.DisplayNameFor(model => model.DateStart)
-        </th>
-        <th>
-            @Html.DisplayNameFor(model => model.DateEnd)
-        </th>
-        <th>
             @Html.DisplayNameFor(model => model.Region)
-        </th>
-        <th>
-            @Html.DisplayNameFor(model => model.AspNetUsers.Email)
         </th>
         <th></th>
     </tr>
@@ -89,27 +102,6 @@
             @Html.DisplayFor(modelItem => item.Titlu)
         </td>
         <td>
-            @Html.DisplayFor(modelItem => item.WhereWhat)
-        </td>
-        <td>
-            @Html.DisplayFor(modelItem => item.Description)
-        </td>
-        <td>
-            @Html.DisplayFor(modelItem => item.Content)
-        </td>
-        <td>
-            @Html.DisplayFor(modelItem => item.Solicitare)
-        </td>
-        <td>
-            @Html.DisplayFor(modelItem => item.Orar)
-        </td>
-        <td>
-            @Html.DisplayFor(modelItem => item.MinSal)
-        </td>
-        <td>
-            @Html.DisplayFor(modelItem => item.MaxSal)
-        </td>
-        <td>
             @Html.DisplayFor(modelItem => item.Localitate)
         </td>
         <td>
@@ -125,16 +117,7 @@
             @Html.DisplayFor(modelItem => item.Longitudine)
         </td>
         <td>
-            @Html.DisplayFor(modelItem => item.DateStart)
-        </td>
-        <td>
-            @Html.DisplayFor(modelItem => item.DateEnd)
-        </td>
-        <td>
             @Html.DisplayFor(modelItem => item.Region)
-        </td>
-        <td>
-            @Html.DisplayFor(modelItem => item.AspNetUsers.Email)
         </td>
         <td>
             @Html.ActionLink("Edit", "Edit", new { id=item.IdCV }) |
