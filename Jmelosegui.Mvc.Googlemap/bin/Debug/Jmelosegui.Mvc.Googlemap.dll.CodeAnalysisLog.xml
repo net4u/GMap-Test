@@ -1,0 +1,1087 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<?xml-stylesheet type="text/xsl" href="c:\program files (x86)\microsoft visual studio 12.0\team tools\static analysis tools\fxcop\Xml\CodeAnalysisReport.xsl"?>
+<FxCopReport Version="12.0">
+ <Namespaces>
+  <Namespace Name="Jmelosegui.Mvc.Googlemap">
+   <Messages>
+    <Message Id="Googlemap" TypeName="IdentifiersShouldBeSpelledCorrectly" Category="Microsoft.Naming" CheckId="CA1704" Status="Active" Created="2015-04-30 19:49:06Z" FixCategory="Breaking">
+     <Issue Name="Namespace" Certainty="75" Level="CriticalWarning">Correct the spelling of 'Googlemap' in namespace name 'Jmelosegui.Mvc.Googlemap'.</Issue>
+    </Message>
+    <Message Id="Jmelosegui" TypeName="IdentifiersShouldBeSpelledCorrectly" Category="Microsoft.Naming" CheckId="CA1704" Status="Active" Created="2015-04-30 19:49:06Z" FixCategory="Breaking">
+     <Issue Name="Namespace" Certainty="75" Level="CriticalWarning">Correct the spelling of 'Jmelosegui' in namespace name 'Jmelosegui.Mvc.Googlemap'.</Issue>
+    </Message>
+    <Message Id="Mvc" TypeName="IdentifiersShouldBeSpelledCorrectly" Category="Microsoft.Naming" CheckId="CA1704" Status="Active" Created="2015-04-30 19:49:06Z" FixCategory="Breaking">
+     <Issue Name="Namespace" Certainty="75" Level="CriticalWarning">Correct the spelling of 'Mvc' in namespace name 'Jmelosegui.Mvc.Googlemap'.</Issue>
+    </Message>
+   </Messages>
+  </Namespace>
+  <Namespace Name="Jmelosegui.Mvc.Googlemap.Overlays">
+   <Messages>
+    <Message Id="Googlemap" TypeName="IdentifiersShouldBeSpelledCorrectly" Category="Microsoft.Naming" CheckId="CA1704" Status="Active" Created="2015-04-30 19:49:06Z" FixCategory="Breaking">
+     <Issue Name="Namespace" Certainty="75" Level="CriticalWarning">Correct the spelling of 'Googlemap' in namespace name 'Jmelosegui.Mvc.Googlemap.Overlays'.</Issue>
+    </Message>
+    <Message Id="Jmelosegui" TypeName="IdentifiersShouldBeSpelledCorrectly" Category="Microsoft.Naming" CheckId="CA1704" Status="Active" Created="2015-04-30 19:49:06Z" FixCategory="Breaking">
+     <Issue Name="Namespace" Certainty="75" Level="CriticalWarning">Correct the spelling of 'Jmelosegui' in namespace name 'Jmelosegui.Mvc.Googlemap.Overlays'.</Issue>
+    </Message>
+    <Message Id="Mvc" TypeName="IdentifiersShouldBeSpelledCorrectly" Category="Microsoft.Naming" CheckId="CA1704" Status="Active" Created="2015-04-30 19:49:06Z" FixCategory="Breaking">
+     <Issue Name="Namespace" Certainty="75" Level="CriticalWarning">Correct the spelling of 'Mvc' in namespace name 'Jmelosegui.Mvc.Googlemap.Overlays'.</Issue>
+    </Message>
+   </Messages>
+  </Namespace>
+ </Namespaces>
+ <Targets>
+  <Target Name="C:\Users\Laurentiu\Documents\GitHub\GMap-Test\Jmelosegui.Mvc.Googlemap\bin\Debug\Jmelosegui.Mvc.Googlemap.dll">
+   <Modules>
+    <Module Name="jmelosegui.mvc.googlemap.dll">
+     <Messages>
+      <Message TypeName="AssembliesShouldHaveValidStrongNames" Category="Microsoft.Design" CheckId="CA2210" Status="Active" Created="2015-04-30 19:49:06Z" FixCategory="NonBreaking">
+       <Issue Name="NoStrongName" Certainty="95" Level="CriticalError">Sign 'Jmelosegui.Mvc.Googlemap.dll' with a strong name key.</Issue>
+      </Message>
+      <Message Id="Googlemap" TypeName="IdentifiersShouldBeSpelledCorrectly" Category="Microsoft.Naming" CheckId="CA1704" Status="Active" Created="2015-04-30 19:49:06Z" FixCategory="Breaking">
+       <Issue Name="Assembly" Certainty="75" Level="CriticalWarning">Correct the spelling of 'Googlemap' in assembly name 'Jmelosegui.Mvc.Googlemap.dll'.</Issue>
+      </Message>
+      <Message Id="Jmelosegui" TypeName="IdentifiersShouldBeSpelledCorrectly" Category="Microsoft.Naming" CheckId="CA1704" Status="Active" Created="2015-04-30 19:49:06Z" FixCategory="Breaking">
+       <Issue Name="Assembly" Certainty="75" Level="CriticalWarning">Correct the spelling of 'Jmelosegui' in assembly name 'Jmelosegui.Mvc.Googlemap.dll'.</Issue>
+      </Message>
+      <Message Id="Mvc" TypeName="IdentifiersShouldBeSpelledCorrectly" Category="Microsoft.Naming" CheckId="CA1704" Status="Active" Created="2015-04-30 19:49:06Z" FixCategory="Breaking">
+       <Issue Name="Assembly" Certainty="75" Level="CriticalWarning">Correct the spelling of 'Mvc' in assembly name 'Jmelosegui.Mvc.Googlemap.dll'.</Issue>
+      </Message>
+      <Message TypeName="MarkAssembliesWithClsCompliant" Category="Microsoft.Design" CheckId="CA1014" Status="Active" Created="2015-04-30 19:49:06Z" FixCategory="NonBreaking">
+       <Issue Certainty="95" Level="Error">Mark 'Jmelosegui.Mvc.Googlemap.dll' with CLSCompliant(true) because it exposes externally visible types.</Issue>
+      </Message>
+     </Messages>
+     <Namespaces>
+      <Namespace Name="Jmelosegui.Mvc.Googlemap">
+       <Types>
+        <Type Name="CenterFactory" Kind="Class" Accessibility="Public" ExternallyVisible="True">
+         <Members>
+          <Member Name="#Address(System.String)" Kind="Method" Static="False" Accessibility="Public" ExternallyVisible="True">
+           <Messages>
+            <Message Id="0#" TypeName="ParameterNamesShouldNotMatchMemberNames" Category="Microsoft.Naming" CheckId="CA1719" Status="Active" Created="2015-04-30 19:49:06Z" FixCategory="Breaking">
+             <Issue Certainty="95" Level="Error" Path="c:\Users\Laurentiu\Documents\GitHub\GMap-Test\Jmelosegui.Mvc.Googlemap" File="CenterFactory.cs" Line="37">Change either member or parameter name 'address' so that one differs from the other.</Issue>
+            </Message>
+           </Messages>
+          </Member>
+         </Members>
+        </Type>
+        <Type Name="ClientSideEnumValueAttribute" Kind="Class" Accessibility="Public" ExternallyVisible="True">
+         <Messages>
+          <Message TypeName="AvoidUnsealedAttributes" Category="Microsoft.Performance" CheckId="CA1813" Status="Active" Created="2015-04-30 19:49:06Z" FixCategory="Breaking">
+           <Issue Certainty="75" Level="Warning">Seal 'ClientSideEnumValueAttribute', if possible.</Issue>
+          </Message>
+         </Messages>
+        </Type>
+        <Type Name="ClientSideObjectWriter" Kind="Class" Accessibility="Public" ExternallyVisible="True">
+         <Members>
+          <Member Name="#Append(System.String,Jmelosegui.Mvc.Googlemap.HtmlTemplate)" Kind="Method" Static="False" Accessibility="Public" ExternallyVisible="True">
+           <Messages>
+            <Message Id="System.String.Format(System.String,System.Object,System.Object)" TypeName="SpecifyIFormatProvider" Category="Microsoft.Globalization" CheckId="CA1305" Status="Active" Created="2015-04-30 19:49:06Z" FixCategory="NonBreaking">
+             <Issue Name="IFormatProviderAlternateString" Certainty="95" Level="Error" Path="c:\Users\Laurentiu\Documents\GitHub\GMap-Test\Jmelosegui.Mvc.Googlemap\Helpers" File="ClientSideObjectWriter.cs" Line="299">Because the behavior of 'string.Format(string, object, object)' could vary based on the current user's locale settings, replace this call in 'ClientSideObjectWriter.Append(string, HtmlTemplate)' with a call to 'string.Format(IFormatProvider, string, params object[])'. If the result of 'string.Format(IFormatProvider, string, params object[])' will be displayed to the user, specify 'CultureInfo.CurrentCulture' as the 'IFormatProvider' parameter. Otherwise, if the result will be stored and accessed by software, such as when it is persisted to disk or to a database, specify 'CultureInfo.InvariantCulture'.</Issue>
+             <Issue Name="IFormatProviderAlternateString" Certainty="95" Level="Error" Path="c:\Users\Laurentiu\Documents\GitHub\GMap-Test\Jmelosegui.Mvc.Googlemap\Helpers" File="ClientSideObjectWriter.cs" Line="308">Because the behavior of 'string.Format(string, object, object)' could vary based on the current user's locale settings, replace this call in 'ClientSideObjectWriter.Append(string, HtmlTemplate)' with a call to 'string.Format(IFormatProvider, string, params object[])'. If the result of 'string.Format(IFormatProvider, string, params object[])' will be displayed to the user, specify 'CultureInfo.CurrentCulture' as the 'IFormatProvider' parameter. Otherwise, if the result will be stored and accessed by software, such as when it is persisted to disk or to a database, specify 'CultureInfo.InvariantCulture'.</Issue>
+            </Message>
+            <Message Id="1" TypeName="Validate arguments of public methods" Category="Microsoft.Design" CheckId="CA1062" Status="Active" Created="2015-04-30 19:49:06Z" FixCategory="DependsOnFix">
+             <Issue Certainty="75" Level="Warning" Path="c:\Users\Laurentiu\Documents\GitHub\GMap-Test\Jmelosegui.Mvc.Googlemap\Helpers" File="ClientSideObjectWriter.cs" Line="285">In externally visible method 'ClientSideObjectWriter.Append(string, HtmlTemplate)', validate parameter 'htmlTemplate' before using it.</Issue>
+            </Message>
+           </Messages>
+          </Member>
+          <Member Name="#Append(System.String,System.Action)" Kind="Method" Static="False" Accessibility="Public" ExternallyVisible="True">
+           <Messages>
+            <Message Id="System.String.Format(System.String,System.Object)" TypeName="SpecifyIFormatProvider" Category="Microsoft.Globalization" CheckId="CA1305" Status="Active" Created="2015-04-30 19:49:06Z" FixCategory="NonBreaking">
+             <Issue Name="IFormatProviderAlternateString" Certainty="95" Level="Error" Path="c:\Users\Laurentiu\Documents\GitHub\GMap-Test\Jmelosegui.Mvc.Googlemap\Helpers" File="ClientSideObjectWriter.cs" Line="220">Because the behavior of 'string.Format(string, object)' could vary based on the current user's locale settings, replace this call in 'ClientSideObjectWriter.Append(string, Action)' with a call to 'string.Format(IFormatProvider, string, params object[])'. If the result of 'string.Format(IFormatProvider, string, params object[])' will be displayed to the user, specify 'CultureInfo.CurrentCulture' as the 'IFormatProvider' parameter. Otherwise, if the result will be stored and accessed by software, such as when it is persisted to disk or to a database, specify 'CultureInfo.InvariantCulture'.</Issue>
+            </Message>
+           </Messages>
+          </Member>
+          <Member Name="#Append(System.String,System.Boolean)" Kind="Method" Static="False" Accessibility="Public" ExternallyVisible="True">
+           <Messages>
+            <Message TypeName="NormalizeStringsToUppercase" Category="Microsoft.Globalization" CheckId="CA1308" Status="Active" Created="2015-04-30 19:49:06Z" FixCategory="NonBreaking">
+             <Issue Name="ToUpperInvariant" Certainty="90" Level="Error" Path="c:\Users\Laurentiu\Documents\GitHub\GMap-Test\Jmelosegui.Mvc.Googlemap\Helpers" File="ClientSideObjectWriter.cs" Line="169">In method 'ClientSideObjectWriter.Append(string, bool)', replace the call to 'string.ToLower(CultureInfo)' with String.ToUpperInvariant().</Issue>
+            </Message>
+            <Message Id="System.String.Format(System.String,System.Object,System.Object)" TypeName="SpecifyIFormatProvider" Category="Microsoft.Globalization" CheckId="CA1305" Status="Active" Created="2015-04-30 19:49:06Z" FixCategory="NonBreaking">
+             <Issue Name="IFormatProviderAlternateString" Certainty="95" Level="Error" Path="c:\Users\Laurentiu\Documents\GitHub\GMap-Test\Jmelosegui.Mvc.Googlemap\Helpers" File="ClientSideObjectWriter.cs" Line="169">Because the behavior of 'string.Format(string, object, object)' could vary based on the current user's locale settings, replace this call in 'ClientSideObjectWriter.Append(string, bool)' with a call to 'string.Format(IFormatProvider, string, params object[])'. If the result of 'string.Format(IFormatProvider, string, params object[])' will be displayed to the user, specify 'CultureInfo.CurrentCulture' as the 'IFormatProvider' parameter. Otherwise, if the result will be stored and accessed by software, such as when it is persisted to disk or to a database, specify 'CultureInfo.InvariantCulture'.</Issue>
+            </Message>
+           </Messages>
+          </Member>
+          <Member Name="#Append(System.String,System.Decimal)" Kind="Method" Static="False" Accessibility="Public" ExternallyVisible="True">
+           <Messages>
+            <Message Id="System.String.Format(System.String,System.Object,System.Object)" TypeName="SpecifyIFormatProvider" Category="Microsoft.Globalization" CheckId="CA1305" Status="Active" Created="2015-04-30 19:49:06Z" FixCategory="NonBreaking">
+             <Issue Name="IFormatProviderAlternateString" Certainty="95" Level="Error" Path="c:\Users\Laurentiu\Documents\GitHub\GMap-Test\Jmelosegui.Mvc.Googlemap\Helpers" File="ClientSideObjectWriter.cs" Line="148">Because the behavior of 'string.Format(string, object, object)' could vary based on the current user's locale settings, replace this call in 'ClientSideObjectWriter.Append(string, decimal)' with a call to 'string.Format(IFormatProvider, string, params object[])'. If the result of 'string.Format(IFormatProvider, string, params object[])' will be displayed to the user, specify 'CultureInfo.CurrentCulture' as the 'IFormatProvider' parameter. Otherwise, if the result will be stored and accessed by software, such as when it is persisted to disk or to a database, specify 'CultureInfo.InvariantCulture'.</Issue>
+            </Message>
+           </Messages>
+          </Member>
+          <Member Name="#Append(System.String,System.Double)" Kind="Method" Static="False" Accessibility="Public" ExternallyVisible="True">
+           <Messages>
+            <Message Id="System.String.Format(System.String,System.Object,System.Object)" TypeName="SpecifyIFormatProvider" Category="Microsoft.Globalization" CheckId="CA1305" Status="Active" Created="2015-04-30 19:49:06Z" FixCategory="NonBreaking">
+             <Issue Name="IFormatProviderAlternateString" Certainty="95" Level="Error" Path="c:\Users\Laurentiu\Documents\GitHub\GMap-Test\Jmelosegui.Mvc.Googlemap\Helpers" File="ClientSideObjectWriter.cs" Line="127">Because the behavior of 'string.Format(string, object, object)' could vary based on the current user's locale settings, replace this call in 'ClientSideObjectWriter.Append(string, double)' with a call to 'string.Format(IFormatProvider, string, params object[])'. If the result of 'string.Format(IFormatProvider, string, params object[])' will be displayed to the user, specify 'CultureInfo.CurrentCulture' as the 'IFormatProvider' parameter. Otherwise, if the result will be stored and accessed by software, such as when it is persisted to disk or to a database, specify 'CultureInfo.InvariantCulture'.</Issue>
+            </Message>
+           </Messages>
+          </Member>
+          <Member Name="#Append(System.String,System.Func`2&lt;System.Object,System.Object&gt;)" Kind="Method" Static="False" Accessibility="Public" ExternallyVisible="True">
+           <Messages>
+            <Message Id="System.String.Format(System.String,System.Object,System.Object)" TypeName="SpecifyIFormatProvider" Category="Microsoft.Globalization" CheckId="CA1305" Status="Active" Created="2015-04-30 19:49:06Z" FixCategory="NonBreaking">
+             <Issue Name="IFormatProviderAlternateString" Certainty="95" Level="Error" Path="c:\Users\Laurentiu\Documents\GitHub\GMap-Test\Jmelosegui.Mvc.Googlemap\Helpers" File="ClientSideObjectWriter.cs" Line="236">Because the behavior of 'string.Format(string, object, object)' could vary based on the current user's locale settings, replace this call in 'ClientSideObjectWriter.Append(string, Func&lt;object, object&gt;)' with a call to 'string.Format(IFormatProvider, string, params object[])'. If the result of 'string.Format(IFormatProvider, string, params object[])' will be displayed to the user, specify 'CultureInfo.CurrentCulture' as the 'IFormatProvider' parameter. Otherwise, if the result will be stored and accessed by software, such as when it is persisted to disk or to a database, specify 'CultureInfo.InvariantCulture'.</Issue>
+            </Message>
+           </Messages>
+          </Member>
+          <Member Name="#Append(System.String,System.Int32)" Kind="Method" Static="False" Accessibility="Public" ExternallyVisible="True">
+           <Messages>
+            <Message Id="System.String.Format(System.String,System.Object,System.Object)" TypeName="SpecifyIFormatProvider" Category="Microsoft.Globalization" CheckId="CA1305" Status="Active" Created="2015-04-30 19:49:06Z" FixCategory="NonBreaking">
+             <Issue Name="IFormatProviderAlternateString" Certainty="95" Level="Error" Path="c:\Users\Laurentiu\Documents\GitHub\GMap-Test\Jmelosegui.Mvc.Googlemap\Helpers" File="ClientSideObjectWriter.cs" Line="94">Because the behavior of 'string.Format(string, object, object)' could vary based on the current user's locale settings, replace this call in 'ClientSideObjectWriter.Append(string, int)' with a call to 'string.Format(IFormatProvider, string, params object[])'. If the result of 'string.Format(IFormatProvider, string, params object[])' will be displayed to the user, specify 'CultureInfo.CurrentCulture' as the 'IFormatProvider' parameter. Otherwise, if the result will be stored and accessed by software, such as when it is persisted to disk or to a database, specify 'CultureInfo.InvariantCulture'.</Issue>
+            </Message>
+           </Messages>
+          </Member>
+          <Member Name="#Append(System.String,System.String)" Kind="Method" Static="False" Accessibility="Public" ExternallyVisible="True">
+           <Messages>
+            <Message Id="System.String.Format(System.String,System.Object,System.Object)" TypeName="SpecifyIFormatProvider" Category="Microsoft.Globalization" CheckId="CA1305" Status="Active" Created="2015-04-30 19:49:06Z" FixCategory="NonBreaking">
+             <Issue Name="IFormatProviderAlternateString" Certainty="95" Level="Error" Path="c:\Users\Laurentiu\Documents\GitHub\GMap-Test\Jmelosegui.Mvc.Googlemap\Helpers" File="ClientSideObjectWriter.cs" Line="71">Because the behavior of 'string.Format(string, object, object)' could vary based on the current user's locale settings, replace this call in 'ClientSideObjectWriter.Append(string, string)' with a call to 'string.Format(IFormatProvider, string, params object[])'. If the result of 'string.Format(IFormatProvider, string, params object[])' will be displayed to the user, specify 'CultureInfo.CurrentCulture' as the 'IFormatProvider' parameter. Otherwise, if the result will be stored and accessed by software, such as when it is persisted to disk or to a database, specify 'CultureInfo.InvariantCulture'.</Issue>
+            </Message>
+           </Messages>
+          </Member>
+          <Member Name="#Append`1(System.String,!!0)" Kind="Method" Static="False" Accessibility="Public" ExternallyVisible="True">
+           <Messages>
+            <Message Id="System.String.Format(System.String,System.Object,System.Object)" TypeName="SpecifyIFormatProvider" Category="Microsoft.Globalization" CheckId="CA1305" Status="Active" Created="2015-04-30 19:49:06Z" FixCategory="NonBreaking">
+             <Issue Name="IFormatProviderAlternateString" Certainty="95" Level="Error" Path="c:\Users\Laurentiu\Documents\GitHub\GMap-Test\Jmelosegui.Mvc.Googlemap\Helpers" File="ClientSideObjectWriter.cs" Line="197">Because the behavior of 'string.Format(string, object, object)' could vary based on the current user's locale settings, replace this call in 'ClientSideObjectWriter.Append&lt;TEnum&gt;(string, TEnum)' with a call to 'string.Format(IFormatProvider, string, params object[])'. If the result of 'string.Format(IFormatProvider, string, params object[])' will be displayed to the user, specify 'CultureInfo.CurrentCulture' as the 'IFormatProvider' parameter. Otherwise, if the result will be stored and accessed by software, such as when it is persisted to disk or to a database, specify 'CultureInfo.InvariantCulture'.</Issue>
+            </Message>
+           </Messages>
+          </Member>
+          <Member Name="#AppendClientEvent(System.String,Jmelosegui.Mvc.Googlemap.ClientEvent)" Kind="Method" Static="False" Accessibility="Public" ExternallyVisible="True">
+           <Messages>
+            <Message Id="System.String.Format(System.String,System.Object,System.Object)" TypeName="SpecifyIFormatProvider" Category="Microsoft.Globalization" CheckId="CA1305" Status="Active" Created="2015-04-30 19:49:06Z" FixCategory="NonBreaking">
+             <Issue Name="IFormatProviderAlternateString" Certainty="95" Level="Error" Path="c:\Users\Laurentiu\Documents\GitHub\GMap-Test\Jmelosegui.Mvc.Googlemap\Helpers" File="ClientSideObjectWriter.cs" Line="275">Because the behavior of 'string.Format(string, object, object)' could vary based on the current user's locale settings, replace this call in 'ClientSideObjectWriter.AppendClientEvent(string, ClientEvent)' with a call to 'string.Format(IFormatProvider, string, params object[])'. If the result of 'string.Format(IFormatProvider, string, params object[])' will be displayed to the user, specify 'CultureInfo.CurrentCulture' as the 'IFormatProvider' parameter. Otherwise, if the result will be stored and accessed by software, such as when it is persisted to disk or to a database, specify 'CultureInfo.InvariantCulture'.</Issue>
+            </Message>
+            <Message Id="1" TypeName="Validate arguments of public methods" Category="Microsoft.Design" CheckId="CA1062" Status="Active" Created="2015-04-30 19:49:06Z" FixCategory="DependsOnFix">
+             <Issue Certainty="75" Level="Warning" Path="c:\Users\Laurentiu\Documents\GitHub\GMap-Test\Jmelosegui.Mvc.Googlemap\Helpers" File="ClientSideObjectWriter.cs" Line="261">In externally visible method 'ClientSideObjectWriter.AppendClientEvent(string, ClientEvent)', validate parameter 'clientEvent' before using it.</Issue>
+            </Message>
+           </Messages>
+          </Member>
+          <Member Name="#AppendCollection(System.String,System.Collections.IEnumerable)" Kind="Method" Static="False" Accessibility="Public" ExternallyVisible="True">
+           <Messages>
+            <Message Id="System.String.Format(System.String,System.Object,System.Object)" TypeName="SpecifyIFormatProvider" Category="Microsoft.Globalization" CheckId="CA1305" Status="Active" Created="2015-04-30 19:49:06Z" FixCategory="NonBreaking">
+             <Issue Name="IFormatProviderAlternateString" Certainty="95" Level="Error" Path="c:\Users\Laurentiu\Documents\GitHub\GMap-Test\Jmelosegui.Mvc.Googlemap\Helpers" File="ClientSideObjectWriter.cs" Line="247">Because the behavior of 'string.Format(string, object, object)' could vary based on the current user's locale settings, replace this call in 'ClientSideObjectWriter.AppendCollection(string, IEnumerable)' with a call to 'string.Format(IFormatProvider, string, params object[])'. If the result of 'string.Format(IFormatProvider, string, params object[])' will be displayed to the user, specify 'CultureInfo.CurrentCulture' as the 'IFormatProvider' parameter. Otherwise, if the result will be stored and accessed by software, such as when it is persisted to disk or to a database, specify 'CultureInfo.InvariantCulture'.</Issue>
+            </Message>
+           </Messages>
+          </Member>
+          <Member Name="#AppendNullableString(System.String,System.String)" Kind="Method" Static="False" Accessibility="Public" ExternallyVisible="True">
+           <Messages>
+            <Message Id="System.String.Format(System.String,System.Object,System.Object)" TypeName="SpecifyIFormatProvider" Category="Microsoft.Globalization" CheckId="CA1305" Status="Active" Created="2015-04-30 19:49:06Z" FixCategory="NonBreaking">
+             <Issue Name="IFormatProviderAlternateString" Certainty="95" Level="Error" Path="c:\Users\Laurentiu\Documents\GitHub\GMap-Test\Jmelosegui.Mvc.Googlemap\Helpers" File="ClientSideObjectWriter.cs" Line="85">Because the behavior of 'string.Format(string, object, object)' could vary based on the current user's locale settings, replace this call in 'ClientSideObjectWriter.AppendNullableString(string, string)' with a call to 'string.Format(IFormatProvider, string, params object[])'. If the result of 'string.Format(IFormatProvider, string, params object[])' will be displayed to the user, specify 'CultureInfo.CurrentCulture' as the 'IFormatProvider' parameter. Otherwise, if the result will be stored and accessed by software, such as when it is persisted to disk or to a database, specify 'CultureInfo.InvariantCulture'.</Issue>
+            </Message>
+           </Messages>
+          </Member>
+          <Member Name="#AppendObject(System.String,System.Object)" Kind="Method" Static="False" Accessibility="Public" ExternallyVisible="True">
+           <Messages>
+            <Message Id="System.String.Format(System.String,System.Object,System.Object)" TypeName="SpecifyIFormatProvider" Category="Microsoft.Globalization" CheckId="CA1305" Status="Active" Created="2015-04-30 19:49:06Z" FixCategory="NonBreaking">
+             <Issue Name="IFormatProviderAlternateString" Certainty="95" Level="Error" Path="c:\Users\Laurentiu\Documents\GitHub\GMap-Test\Jmelosegui.Mvc.Googlemap\Helpers" File="ClientSideObjectWriter.cs" Line="254">Because the behavior of 'string.Format(string, object, object)' could vary based on the current user's locale settings, replace this call in 'ClientSideObjectWriter.AppendObject(string, object)' with a call to 'string.Format(IFormatProvider, string, params object[])'. If the result of 'string.Format(IFormatProvider, string, params object[])' will be displayed to the user, specify 'CultureInfo.CurrentCulture' as the 'IFormatProvider' parameter. Otherwise, if the result will be stored and accessed by software, such as when it is persisted to disk or to a database, specify 'CultureInfo.InvariantCulture'.</Issue>
+            </Message>
+           </Messages>
+          </Member>
+          <Member Name="#QuoteString(System.String)" Kind="Method" Static="True" Accessibility="Private" ExternallyVisible="False">
+           <Messages>
+            <Message TypeName="AvoidExcessiveComplexity" Category="Microsoft.Maintainability" CheckId="CA1502" Status="Active" Created="2015-04-30 19:49:06Z" FixCategory="NonBreaking">
+             <Issue Certainty="90" Level="Warning" Path="c:\Users\Laurentiu\Documents\GitHub\GMap-Test\Jmelosegui.Mvc.Googlemap\Helpers" File="ClientSideObjectWriter.cs" Line="328">'ClientSideObjectWriter.QuoteString(string)' has a cyclomatic complexity of 30. Rewrite or refactor the method to reduce complexity to 25.</Issue>
+            </Message>
+           </Messages>
+          </Member>
+         </Members>
+        </Type>
+        <Type Name="EnumExtentions" Kind="Class" Accessibility="Public" ExternallyVisible="True">
+         <Messages>
+          <Message Id="Extentions" TypeName="IdentifiersShouldBeSpelledCorrectly" Category="Microsoft.Naming" CheckId="CA1704" Status="Active" Created="2015-04-30 19:49:06Z" FixCategory="Breaking">
+           <Issue Name="Type" Certainty="75" Level="CriticalWarning">Correct the spelling of 'Extentions' in type name 'EnumExtentions'.</Issue>
+          </Message>
+         </Messages>
+         <Members>
+          <Member Name="#ToClientSideString(System.Enum)" Kind="Method" Static="True" Accessibility="Public" ExternallyVisible="True">
+           <Messages>
+            <Message TypeName="DoNotRaiseReservedExceptionTypes" Category="Microsoft.Usage" CheckId="CA2201" Status="Active" Created="2015-04-30 19:49:06Z" FixCategory="Breaking">
+             <Issue Name="TooGeneric" Certainty="95" Level="Error" Path="c:\Users\Laurentiu\Documents\GitHub\GMap-Test\Jmelosegui.Mvc.Googlemap\Extensions" File="EnumExtentions.cs" Line="17">'EnumExtentions.ToClientSideString(this Enum)' creates an exception of type 'Exception', an exception type that is not sufficiently specific and should never be raised by user code. If this exception instance might be thrown, use a different exception type.</Issue>
+            </Message>
+            <Message Id="ClientSideEnumValueAttribute" TypeName="Literals should be spelled correctly" Category="Microsoft.Naming" CheckId="CA2204" Status="Active" Created="2015-04-30 19:49:06Z" FixCategory="DependsOnFix">
+             <Issue Certainty="75" Level="Warning" Path="c:\Users\Laurentiu\Documents\GitHub\GMap-Test\Jmelosegui.Mvc.Googlemap\Extensions" File="EnumExtentions.cs" Line="17">Correct the spelling of the unrecognized token 'ClientSideEnumValueAttribute' in the literal '"You must decorate the enum value with the attribute \"ClientSideEnumValueAttribu..."'.</Issue>
+            </Message>
+            <Message Id="0" TypeName="Validate arguments of public methods" Category="Microsoft.Design" CheckId="CA1062" Status="Active" Created="2015-04-30 19:49:06Z" FixCategory="DependsOnFix">
+             <Issue Certainty="75" Level="Warning" Path="c:\Users\Laurentiu\Documents\GitHub\GMap-Test\Jmelosegui.Mvc.Googlemap\Extensions" File="EnumExtentions.cs" Line="10">In externally visible method 'EnumExtentions.ToClientSideString(this Enum)', validate parameter 'source' before using it.</Issue>
+            </Message>
+           </Messages>
+          </Member>
+         </Members>
+        </Type>
+        <Type Name="FeatureType" Kind="Enum" Accessibility="Public" ExternallyVisible="True">
+         <Members>
+          <Member Name="#LandscapeManMade" Kind="Field" Static="True" Accessibility="Public" ExternallyVisible="True">
+           <Messages>
+            <Message Id="ManMade" TypeName="CompoundWordsShouldBeCasedCorrectly" Category="Microsoft.Naming" CheckId="CA1702" Status="Active" Created="2015-04-30 19:49:06Z" FixCategory="Breaking">
+             <Issue Name="MemberShouldBeDiscreteTerm" Certainty="80" Level="Error">The compound word 'ManMade' in member name 'FeatureType.LandscapeManMade' exists as a discrete term. If your usage is intended to be single word, case it as 'Manmade' or strip the first token entirely if it represents any sort of Hungarian notation.</Issue>
+            </Message>
+           </Messages>
+          </Member>
+          <Member Name="#LandscapeNaturalLandcover" Kind="Field" Static="True" Accessibility="Public" ExternallyVisible="True">
+           <Messages>
+            <Message Id="Landcover" TypeName="IdentifiersShouldBeSpelledCorrectly" Category="Microsoft.Naming" CheckId="CA1704" Status="Active" Created="2015-04-30 19:49:06Z" FixCategory="Breaking">
+             <Issue Name="Member" Certainty="75" Level="CriticalWarning">Correct the spelling of 'Landcover' in member name 'FeatureType.LandscapeNaturalLandcover' or remove it entirely if it represents any sort of Hungarian notation.</Issue>
+            </Message>
+           </Messages>
+          </Member>
+          <Member Name="#PoiGoverment" Kind="Field" Static="True" Accessibility="Public" ExternallyVisible="True">
+           <Messages>
+            <Message Id="Goverment" TypeName="IdentifiersShouldBeSpelledCorrectly" Category="Microsoft.Naming" CheckId="CA1704" Status="Active" Created="2015-04-30 19:49:06Z" FixCategory="Breaking">
+             <Issue Name="Member" Certainty="75" Level="CriticalWarning">Correct the spelling of 'Goverment' in member name 'FeatureType.PoiGoverment' or remove it entirely if it represents any sort of Hungarian notation.</Issue>
+            </Message>
+           </Messages>
+          </Member>
+         </Members>
+        </Type>
+        <Type Name="FluentDictionary" Kind="Class" Accessibility="Public" ExternallyVisible="True">
+         <Messages>
+          <Message TypeName="IdentifiersShouldNotHaveIncorrectSuffix" Category="Microsoft.Naming" CheckId="CA1711" Status="Active" Created="2015-04-30 19:49:06Z" FixCategory="Breaking">
+           <Issue Name="TypeNoAlternate" Certainty="95" Level="CriticalError">Rename type name 'FluentDictionary' so that it does not end in 'Dictionary'.</Issue>
+          </Message>
+         </Messages>
+         <Members>
+          <Member Name="#Add`1(System.String,!!0,System.Func`1&lt;System.Boolean&gt;)" Kind="Method" Static="False" Accessibility="Public" ExternallyVisible="True">
+           <Messages>
+            <Message Id="2" TypeName="Validate arguments of public methods" Category="Microsoft.Design" CheckId="CA1062" Status="Active" Created="2015-04-30 19:49:06Z" FixCategory="DependsOnFix">
+             <Issue Certainty="75" Level="Warning" Path="c:\Users\Laurentiu\Documents\GitHub\GMap-Test\Jmelosegui.Mvc.Googlemap\Helpers" File="FluentDictionary.cs" Line="32">In externally visible method 'FluentDictionary.Add&lt;T&gt;(string, T, Func&lt;bool&gt;)', validate parameter 'condition' before using it.</Issue>
+            </Message>
+           </Messages>
+          </Member>
+         </Members>
+        </Type>
+        <Type Name="GoogleMap" Kind="Class" Accessibility="Public" ExternallyVisible="True">
+         <Messages>
+          <Message TypeName="TypeNamesShouldNotMatchNamespaces" Category="Microsoft.Naming" CheckId="CA1724" Status="Active" Created="2015-04-30 19:49:06Z" FixCategory="Breaking">
+           <Issue Certainty="95" Level="Error">The type name 'GoogleMap' conflicts in whole or in part with the namespace name 'Jmelosegui.Mvc.Googlemap'. Change either name to eliminate the conflict.</Issue>
+          </Message>
+         </Messages>
+         <Members>
+          <Member Name="#ApiKey" Kind="Property" Static="False" Accessibility="Public" ExternallyVisible="True">
+           <Messages>
+            <Message Id="Api" TypeName="IdentifiersShouldBeSpelledCorrectly" Category="Microsoft.Naming" CheckId="CA1704" Status="Active" Created="2015-04-30 19:49:06Z" FixCategory="Breaking">
+             <Issue Name="Member" Certainty="75" Level="CriticalWarning">Correct the spelling of 'Api' in member name 'GoogleMap.ApiKey' or remove it entirely if it represents any sort of Hungarian notation.</Issue>
+            </Message>
+           </Messages>
+          </Member>
+          <Member Name="#BindTo`2(System.Collections.Generic.IEnumerable`1&lt;!!1&gt;,System.Action`1&lt;Jmelosegui.Mvc.Googlemap.Overlays.OverlayBindingFactory`1&lt;!!0&gt;&gt;)" Kind="Method" Static="False" Accessibility="Public" ExternallyVisible="True">
+           <Messages>
+            <Message TypeName="DoNotNestGenericTypesInMemberSignatures" Category="Microsoft.Design" CheckId="CA1006" Status="Active" Created="2015-04-30 19:49:06Z" FixCategory="Breaking">
+             <Issue Certainty="95" Level="CriticalError" Path="c:\Users\Laurentiu\Documents\GitHub\GMap-Test\Jmelosegui.Mvc.Googlemap" File="GoogleMap.cs" Line="320">Consider a design where 'GoogleMap.BindTo&lt;TGoogleMapOverlay, TDataItem&gt;(IEnumerable&lt;TDataItem&gt;, Action&lt;OverlayBindingFactory&lt;TGoogleMapOverlay&gt;&gt;)' doesn't nest generic type 'Action&lt;OverlayBindingFactory&lt;TGoogleMapOverlay&gt;&gt;'.</Issue>
+            </Message>
+            <Message Id="0" TypeName="Validate arguments of public methods" Category="Microsoft.Design" CheckId="CA1062" Status="Active" Created="2015-04-30 19:49:06Z" FixCategory="DependsOnFix">
+             <Issue Certainty="75" Level="Warning" Path="c:\Users\Laurentiu\Documents\GitHub\GMap-Test\Jmelosegui.Mvc.Googlemap" File="GoogleMap.cs" Line="326">In externally visible method 'GoogleMap.BindTo&lt;TGoogleMapOverlay, TDataItem&gt;(IEnumerable&lt;TDataItem&gt;, Action&lt;OverlayBindingFactory&lt;TGoogleMapOverlay&gt;&gt;)', validate parameter 'dataSource' before using it.</Issue>
+            </Message>
+           </Messages>
+          </Member>
+          <Member Name="#Draggable" Kind="Property" Static="False" Accessibility="Public" ExternallyVisible="True">
+           <Messages>
+            <Message Id="Draggable" TypeName="IdentifiersShouldBeSpelledCorrectly" Category="Microsoft.Naming" CheckId="CA1704" Status="Active" Created="2015-04-30 19:49:06Z" FixCategory="Breaking">
+             <Issue Name="Member" Certainty="75" Level="CriticalWarning">Correct the spelling of 'Draggable' in member name 'GoogleMap.Draggable' or remove it entirely if it represents any sort of Hungarian notation.</Issue>
+            </Message>
+           </Messages>
+          </Member>
+          <Member Name="#ScriptFileNames" Kind="Property" Static="False" Accessibility="Public" ExternallyVisible="True">
+           <Messages>
+            <Message TypeName="DoNotExposeGenericLists" Category="Microsoft.Design" CheckId="CA1002" Status="Active" Created="2015-04-30 19:49:06Z" FixCategory="Breaking">
+             <Issue Certainty="95" Level="Error">Change 'List&lt;string&gt;' in 'GoogleMap.ScriptFileNames' to use Collection&lt;T&gt;, ReadOnlyCollection&lt;T&gt; or KeyedCollection&lt;K,V&gt;</Issue>
+            </Message>
+           </Messages>
+          </Member>
+          <Member Name="#ToHtmlString()" Kind="Method" Static="False" Accessibility="Public" ExternallyVisible="True">
+           <Messages>
+            <Message Id="System.IO.StringWriter.#ctor" TypeName="SpecifyIFormatProvider" Category="Microsoft.Globalization" CheckId="CA1305" Status="Active" Created="2015-04-30 19:49:06Z" FixCategory="NonBreaking">
+             <Issue Name="IFormatProviderAlternate" Certainty="95" Level="Error" Path="c:\Users\Laurentiu\Documents\GitHub\GMap-Test\Jmelosegui.Mvc.Googlemap" File="GoogleMap.cs" Line="363">Because the behavior of 'StringWriter.StringWriter()' could vary based on the current user's locale settings, replace this call in 'GoogleMap.ToHtmlString()' with a call to 'StringWriter.StringWriter(IFormatProvider)'. If the result of 'StringWriter.StringWriter(IFormatProvider)' will be based on input from the user, specify 'CultureInfo.CurrentCulture' as the 'IFormatProvider' parameter. Otherwise, if the result will based on input stored and accessed by software, such as when it is loaded from disk or from a database, specify 'CultureInfo.InvariantCulture'.</Issue>
+            </Message>
+           </Messages>
+          </Member>
+          <Member Name="#WriteHtml(System.Web.UI.HtmlTextWriter)" Kind="Method" Static="False" Accessibility="Family" ExternallyVisible="True">
+           <Messages>
+            <Message Id="System.String.Format(System.String,System.Object)" TypeName="SpecifyIFormatProvider" Category="Microsoft.Globalization" CheckId="CA1305" Status="Active" Created="2015-04-30 19:49:06Z" FixCategory="NonBreaking">
+             <Issue Name="IFormatProviderAlternateString" Certainty="95" Level="Error" Path="c:\Users\Laurentiu\Documents\GitHub\GMap-Test\Jmelosegui.Mvc.Googlemap" File="GoogleMap.cs" Line="300">Because the behavior of 'string.Format(string, object)' could vary based on the current user's locale settings, replace this call in 'GoogleMap.WriteHtml(HtmlTextWriter)' with a call to 'string.Format(IFormatProvider, string, params object[])'. If the result of 'string.Format(IFormatProvider, string, params object[])' will be displayed to the user, specify 'CultureInfo.CurrentCulture' as the 'IFormatProvider' parameter. Otherwise, if the result will be stored and accessed by software, such as when it is persisted to disk or to a database, specify 'CultureInfo.InvariantCulture'.</Issue>
+            </Message>
+            <Message Id="System.String.Format(System.String,System.Object,System.Object)" TypeName="SpecifyIFormatProvider" Category="Microsoft.Globalization" CheckId="CA1305" Status="Active" Created="2015-04-30 19:49:06Z" FixCategory="NonBreaking">
+             <Issue Name="IFormatProviderAlternateString" Certainty="95" Level="Error" Path="c:\Users\Laurentiu\Documents\GitHub\GMap-Test\Jmelosegui.Mvc.Googlemap" File="GoogleMap.cs" Line="291">Because the behavior of 'string.Format(string, object, object)' could vary based on the current user's locale settings, replace this call in 'GoogleMap.WriteHtml(HtmlTextWriter)' with a call to 'string.Format(IFormatProvider, string, params object[])'. If the result of 'string.Format(IFormatProvider, string, params object[])' will be displayed to the user, specify 'CultureInfo.CurrentCulture' as the 'IFormatProvider' parameter. Otherwise, if the result will be stored and accessed by software, such as when it is persisted to disk or to a database, specify 'CultureInfo.InvariantCulture'.</Issue>
+             <Issue Name="IFormatProviderAlternateString" Certainty="95" Level="Error" Path="c:\Users\Laurentiu\Documents\GitHub\GMap-Test\Jmelosegui.Mvc.Googlemap" File="GoogleMap.cs" Line="306">Because the behavior of 'string.Format(string, object, object)' could vary based on the current user's locale settings, replace this call in 'GoogleMap.WriteHtml(HtmlTextWriter)' with a call to 'string.Format(IFormatProvider, string, params object[])'. If the result of 'string.Format(IFormatProvider, string, params object[])' will be displayed to the user, specify 'CultureInfo.CurrentCulture' as the 'IFormatProvider' parameter. Otherwise, if the result will be stored and accessed by software, such as when it is persisted to disk or to a database, specify 'CultureInfo.InvariantCulture'.</Issue>
+            </Message>
+           </Messages>
+          </Member>
+          <Member Name="#WriteInitializationScript(System.IO.TextWriter)" Kind="Method" Static="False" Accessibility="Public" ExternallyVisible="True">
+           <Messages>
+            <Message TypeName="AvoidExcessiveClassCoupling" Category="Microsoft.Maintainability" CheckId="CA1506" Status="Active" Created="2015-04-30 19:49:06Z" FixCategory="Breaking">
+             <Issue Name="Method" Certainty="75" Level="Warning" Path="c:\Users\Laurentiu\Documents\GitHub\GMap-Test\Jmelosegui.Mvc.Googlemap" File="GoogleMap.cs" Line="155">'GoogleMap.WriteInitializationScript(TextWriter)' is coupled with 31 different types from 9 different namespaces. Rewrite or refactor the method to decrease its class coupling, or consider moving the method to one of the other types it is tightly coupled with. A class coupling above 40 indicates poor maintainability, a class coupling between 40 and 30 indicates moderate maintainability, and a class coupling below 30 indicates good maintainability.</Issue>
+            </Message>
+            <Message TypeName="DoNotRaiseReservedExceptionTypes" Category="Microsoft.Usage" CheckId="CA2201" Status="Active" Created="2015-04-30 19:49:06Z" FixCategory="Breaking">
+             <Issue Name="TooGeneric" Certainty="95" Level="Error" Path="c:\Users\Laurentiu\Documents\GitHub\GMap-Test\Jmelosegui.Mvc.Googlemap" File="GoogleMap.cs" Line="187">'GoogleMap.WriteInitializationScript(TextWriter)' creates an exception of type 'Exception', an exception type that is not sufficiently specific and should never be raised by user code. If this exception instance might be thrown, use a different exception type.</Issue>
+            </Message>
+            <Message Id="ImageMapTypes" TypeName="Literals should be spelled correctly" Category="Microsoft.Naming" CheckId="CA2204" Status="Active" Created="2015-04-30 19:49:06Z" FixCategory="DependsOnFix">
+             <Issue Certainty="75" Level="Warning" Path="c:\Users\Laurentiu\Documents\GitHub\GMap-Test\Jmelosegui.Mvc.Googlemap" File="GoogleMap.cs" Line="187">Correct the spelling of the unrecognized token 'ImageMapTypes' in the literal '"Cannot find the MapTypeId in the ImageMapTypes collection"'.</Issue>
+            </Message>
+            <Message Id="MapTypeId" TypeName="Literals should be spelled correctly" Category="Microsoft.Naming" CheckId="CA2204" Status="Active" Created="2015-04-30 19:49:06Z" FixCategory="DependsOnFix">
+             <Issue Certainty="75" Level="Warning" Path="c:\Users\Laurentiu\Documents\GitHub\GMap-Test\Jmelosegui.Mvc.Googlemap" File="GoogleMap.cs" Line="187">Correct the spelling of the unrecognized token 'MapTypeId' in the literal '"Cannot find the MapTypeId in the ImageMapTypes collection"'.</Issue>
+            </Message>
+           </Messages>
+          </Member>
+         </Members>
+        </Type>
+        <Type Name="GoogleMapBuilder" Kind="Class" Accessibility="Public" ExternallyVisible="True">
+         <Members>
+          <Member Name="#.ctor(Jmelosegui.Mvc.Googlemap.GoogleMap)" Kind="Method" Static="False" Accessibility="Public" ExternallyVisible="True">
+           <Messages>
+            <Message Id="0" TypeName="Validate arguments of public methods" Category="Microsoft.Design" CheckId="CA1062" Status="Active" Created="2015-04-30 19:49:06Z" FixCategory="DependsOnFix">
+             <Issue Certainty="75" Level="Warning" Path="c:\Users\Laurentiu\Documents\GitHub\GMap-Test\Jmelosegui.Mvc.Googlemap" File="GoogleMapBuilder.cs" Line="17">In externally visible method 'GoogleMapBuilder.GoogleMapBuilder(GoogleMap)', validate parameter 'component' before using it.</Issue>
+            </Message>
+           </Messages>
+          </Member>
+          <Member Name="#ApiKey(System.String)" Kind="Method" Static="False" Accessibility="Public" ExternallyVisible="True">
+           <Messages>
+            <Message Id="Api" TypeName="IdentifiersShouldBeSpelledCorrectly" Category="Microsoft.Naming" CheckId="CA1704" Status="Active" Created="2015-04-30 19:49:06Z" FixCategory="Breaking">
+             <Issue Name="Member" Certainty="75" Level="CriticalWarning" Path="c:\Users\Laurentiu\Documents\GitHub\GMap-Test\Jmelosegui.Mvc.Googlemap" File="GoogleMapBuilder.cs" Line="25">Correct the spelling of 'Api' in member name 'GoogleMapBuilder.ApiKey(string)' or remove it entirely if it represents any sort of Hungarian notation.</Issue>
+            </Message>
+            <Message Id="api" TypeName="IdentifiersShouldBeSpelledCorrectly" Category="Microsoft.Naming" CheckId="CA1704" Status="Active" Created="2015-04-30 19:49:06Z" FixCategory="Breaking">
+             <Issue Name="MemberParameter" Certainty="75" Level="CriticalWarning" Path="c:\Users\Laurentiu\Documents\GitHub\GMap-Test\Jmelosegui.Mvc.Googlemap" File="GoogleMapBuilder.cs" Line="25">In method 'GoogleMapBuilder.ApiKey(string)', correct the spelling of 'api' in parameter name 'apiKey' or remove it entirely if it represents any sort of Hungarian notation.</Issue>
+            </Message>
+            <Message Id="0#" TypeName="ParameterNamesShouldNotMatchMemberNames" Category="Microsoft.Naming" CheckId="CA1719" Status="Active" Created="2015-04-30 19:49:06Z" FixCategory="Breaking">
+             <Issue Certainty="95" Level="Error" Path="c:\Users\Laurentiu\Documents\GitHub\GMap-Test\Jmelosegui.Mvc.Googlemap" File="GoogleMapBuilder.cs" Line="25">Change either member or parameter name 'apiKey' so that one differs from the other.</Issue>
+            </Message>
+           </Messages>
+          </Member>
+          <Member Name="#BindTo`2(System.Collections.Generic.IEnumerable`1&lt;!!0&gt;,System.Action`1&lt;Jmelosegui.Mvc.Googlemap.Overlays.OverlayBindingFactory`1&lt;!!1&gt;&gt;)" Kind="Method" Static="False" Accessibility="Public" ExternallyVisible="True">
+           <Messages>
+            <Message TypeName="DoNotNestGenericTypesInMemberSignatures" Category="Microsoft.Design" CheckId="CA1006" Status="Active" Created="2015-04-30 19:49:06Z" FixCategory="Breaking">
+             <Issue Certainty="95" Level="CriticalError" Path="c:\Users\Laurentiu\Documents\GitHub\GMap-Test\Jmelosegui.Mvc.Googlemap" File="GoogleMapBuilder.cs" Line="279">Consider a design where 'GoogleMapBuilder.BindTo&lt;T, TOverlay&gt;(IEnumerable&lt;T&gt;, Action&lt;OverlayBindingFactory&lt;TOverlay&gt;&gt;)' doesn't nest generic type 'Action&lt;OverlayBindingFactory&lt;TOverlay&gt;&gt;'.</Issue>
+            </Message>
+           </Messages>
+          </Member>
+          <Member Name="#Culture(System.Globalization.CultureInfo)" Kind="Method" Static="False" Accessibility="Public" ExternallyVisible="True">
+           <Messages>
+            <Message Id="0#" TypeName="ParameterNamesShouldNotMatchMemberNames" Category="Microsoft.Naming" CheckId="CA1719" Status="Active" Created="2015-04-30 19:49:06Z" FixCategory="Breaking">
+             <Issue Certainty="95" Level="Error" Path="c:\Users\Laurentiu\Documents\GitHub\GMap-Test\Jmelosegui.Mvc.Googlemap" File="GoogleMapBuilder.cs" Line="70">Change either member or parameter name 'culture' so that one differs from the other.</Issue>
+            </Message>
+           </Messages>
+          </Member>
+          <Member Name="#Draggable(System.Boolean)" Kind="Method" Static="False" Accessibility="Public" ExternallyVisible="True">
+           <Messages>
+            <Message Id="Draggable" TypeName="IdentifiersShouldBeSpelledCorrectly" Category="Microsoft.Naming" CheckId="CA1704" Status="Active" Created="2015-04-30 19:49:06Z" FixCategory="Breaking">
+             <Issue Name="Member" Certainty="75" Level="CriticalWarning" Path="c:\Users\Laurentiu\Documents\GitHub\GMap-Test\Jmelosegui.Mvc.Googlemap" File="GoogleMapBuilder.cs" Line="82">Correct the spelling of 'Draggable' in member name 'GoogleMapBuilder.Draggable(bool)' or remove it entirely if it represents any sort of Hungarian notation.</Issue>
+            </Message>
+           </Messages>
+          </Member>
+          <Member Name="#Name(System.String)" Kind="Method" Static="False" Accessibility="Public" ExternallyVisible="True">
+           <Messages>
+            <Message Id="0#" TypeName="ParameterNamesShouldNotMatchMemberNames" Category="Microsoft.Naming" CheckId="CA1719" Status="Active" Created="2015-04-30 19:49:06Z" FixCategory="Breaking">
+             <Issue Certainty="95" Level="Error" Path="c:\Users\Laurentiu\Documents\GitHub\GMap-Test\Jmelosegui.Mvc.Googlemap" File="GoogleMapBuilder.cs" Line="189">Change either member or parameter name 'name' so that one differs from the other.</Issue>
+            </Message>
+           </Messages>
+          </Member>
+         </Members>
+        </Type>
+        <Type Name="GoogleMapClientEvents" Kind="Class" Accessibility="Public" ExternallyVisible="True">
+         <Members>
+          <Member Name="#OnMapDobleClick" Kind="Property" Static="False" Accessibility="Public" ExternallyVisible="True">
+           <Messages>
+            <Message Id="Doble" TypeName="IdentifiersShouldBeSpelledCorrectly" Category="Microsoft.Naming" CheckId="CA1704" Status="Active" Created="2015-04-30 19:49:06Z" FixCategory="Breaking">
+             <Issue Name="Member" Certainty="75" Level="CriticalWarning">Correct the spelling of 'Doble' in member name 'GoogleMapClientEvents.OnMapDobleClick' or remove it entirely if it represents any sort of Hungarian notation.</Issue>
+            </Message>
+           </Messages>
+          </Member>
+          <Member Name="#SerializeTo(Jmelosegui.Mvc.Googlemap.ClientSideObjectWriter)" Kind="Method" Static="False" Accessibility="Public" ExternallyVisible="True">
+           <Messages>
+            <Message Id="0" TypeName="Validate arguments of public methods" Category="Microsoft.Design" CheckId="CA1062" Status="Active" Created="2015-04-30 19:49:06Z" FixCategory="DependsOnFix">
+             <Issue Certainty="75" Level="Warning" Path="c:\Users\Laurentiu\Documents\GitHub\GMap-Test\Jmelosegui.Mvc.Googlemap\Events" File="GooglemapClientEvents.cs" Line="72">In externally visible method 'GoogleMapClientEvents.SerializeTo(ClientSideObjectWriter)', validate parameter 'writer' before using it.</Issue>
+            </Message>
+           </Messages>
+          </Member>
+         </Members>
+        </Type>
+        <Type Name="GoogleMapClientEventsBuilder" Kind="Class" Accessibility="Public" ExternallyVisible="True">
+         <Members>
+          <Member Name="#OnMapDobleClick(System.String)" Kind="Method" Static="False" Accessibility="Public" ExternallyVisible="True">
+           <Messages>
+            <Message Id="Doble" TypeName="IdentifiersShouldBeSpelledCorrectly" Category="Microsoft.Naming" CheckId="CA1704" Status="Active" Created="2015-04-30 19:49:06Z" FixCategory="Breaking">
+             <Issue Name="Member" Certainty="75" Level="CriticalWarning" Path="c:\Users\Laurentiu\Documents\GitHub\GMap-Test\Jmelosegui.Mvc.Googlemap\Events" File="GooglemapClientEventsBuilder.cs" Line="43">Correct the spelling of 'Doble' in member name 'GoogleMapClientEventsBuilder.OnMapDobleClick(string)' or remove it entirely if it represents any sort of Hungarian notation.</Issue>
+             <Issue Name="MemberParameter" Certainty="75" Level="CriticalWarning" Path="c:\Users\Laurentiu\Documents\GitHub\GMap-Test\Jmelosegui.Mvc.Googlemap\Events" File="GooglemapClientEventsBuilder.cs" Line="43">In method 'GoogleMapClientEventsBuilder.OnMapDobleClick(string)', correct the spelling of 'Doble' in parameter name 'onMapDobleClickHandlerName' or remove it entirely if it represents any sort of Hungarian notation.</Issue>
+            </Message>
+           </Messages>
+          </Member>
+          <Member Name="#OnMapRightClick(System.String)" Kind="Method" Static="False" Accessibility="Public" ExternallyVisible="True">
+           <Messages>
+            <Message Id="Clickk" TypeName="IdentifiersShouldBeSpelledCorrectly" Category="Microsoft.Naming" CheckId="CA1704" Status="Active" Created="2015-04-30 19:49:06Z" FixCategory="Breaking">
+             <Issue Name="MemberParameter" Certainty="75" Level="CriticalWarning" Path="c:\Users\Laurentiu\Documents\GitHub\GMap-Test\Jmelosegui.Mvc.Googlemap\Events" File="GooglemapClientEventsBuilder.cs" Line="52">In method 'GoogleMapClientEventsBuilder.OnMapRightClick(string)', correct the spelling of 'Clickk' in parameter name 'onMapRightClickkHandlerName' or remove it entirely if it represents any sort of Hungarian notation.</Issue>
+            </Message>
+           </Messages>
+          </Member>
+         </Members>
+        </Type>
+        <Type Name="HtmlElement" Kind="Class" Accessibility="Public" ExternallyVisible="True">
+         <Members>
+          <Member Name="#AddClass(System.String[])" Kind="Method" Static="False" Accessibility="Public" ExternallyVisible="True">
+           <Messages>
+            <Message Id="0" TypeName="Validate arguments of public methods" Category="Microsoft.Design" CheckId="CA1062" Status="Active" Created="2015-04-30 19:49:06Z" FixCategory="DependsOnFix">
+             <Issue Certainty="75" Level="Warning" Path="c:\Users\Laurentiu\Documents\GitHub\GMap-Test\Jmelosegui.Mvc.Googlemap\Helpers" File="HtmlElement.cs" Line="97">In externally visible method 'HtmlElement.AddClass(params string[])', validate parameter 'classes' before using it.</Issue>
+            </Message>
+           </Messages>
+          </Member>
+          <Member Name="#AppendTo(Jmelosegui.Mvc.Googlemap.IHtmlNode)" Kind="Method" Static="False" Accessibility="Public" ExternallyVisible="True">
+           <Messages>
+            <Message Id="0" TypeName="Validate arguments of public methods" Category="Microsoft.Design" CheckId="CA1062" Status="Active" Created="2015-04-30 19:49:06Z" FixCategory="DependsOnFix">
+             <Issue Certainty="75" Level="Warning" Path="c:\Users\Laurentiu\Documents\GitHub\GMap-Test\Jmelosegui.Mvc.Googlemap\Helpers" File="HtmlElement.cs" Line="173">In externally visible method 'HtmlElement.AppendTo(IHtmlNode)', validate parameter 'parent' before using it.</Issue>
+            </Message>
+           </Messages>
+          </Member>
+          <Member Name="#Attributes`2(System.Collections.Generic.IDictionary`2&lt;!!0,!!1&gt;)" Kind="Method" Static="False" Accessibility="Public" ExternallyVisible="True">
+           <Messages>
+            <Message Id="0#" TypeName="ParameterNamesShouldMatchBaseDeclaration" Category="Microsoft.Naming" CheckId="CA1725" Status="Active" Created="2015-04-30 19:49:06Z" FixCategory="Breaking">
+             <Issue Certainty="95" Level="Error" Path="c:\Users\Laurentiu\Documents\GitHub\GMap-Test\Jmelosegui.Mvc.Googlemap\Helpers" File="HtmlElement.cs" Line="163">In member 'HtmlElement.Attributes&lt;TKey, TValue&gt;(IDictionary&lt;TKey, TValue&gt;)', change parameter name 'values' to 'attributes' in order to match the identifier as it has been declared in 'IHtmlNode.Attributes&lt;TKey, TValue&gt;(IDictionary&lt;TKey, TValue&gt;)'.</Issue>
+            </Message>
+           </Messages>
+          </Member>
+          <Member Name="#Attributes`2(System.Collections.Generic.IDictionary`2&lt;!!0,!!1&gt;,System.Boolean)" Kind="Method" Static="False" Accessibility="Public" ExternallyVisible="True">
+           <Messages>
+            <Message Id="0#" TypeName="ParameterNamesShouldMatchBaseDeclaration" Category="Microsoft.Naming" CheckId="CA1725" Status="Active" Created="2015-04-30 19:49:06Z" FixCategory="Breaking">
+             <Issue Certainty="95" Level="Error" Path="c:\Users\Laurentiu\Documents\GitHub\GMap-Test\Jmelosegui.Mvc.Googlemap\Helpers" File="HtmlElement.cs" Line="167">In member 'HtmlElement.Attributes&lt;TKey, TValue&gt;(IDictionary&lt;TKey, TValue&gt;, bool)', change parameter name 'values' to 'attributes' in order to match the identifier as it has been declared in 'IHtmlNode.Attributes&lt;TKey, TValue&gt;(IDictionary&lt;TKey, TValue&gt;, bool)'.</Issue>
+            </Message>
+           </Messages>
+          </Member>
+         </Members>
+        </Type>
+        <Type Name="IHideObjectMembers" Kind="Interface" Accessibility="Public" ExternallyVisible="True">
+         <Members>
+          <Member Name="#GetType()" Kind="Method" Static="False" Accessibility="Public" ExternallyVisible="True">
+           <Messages>
+            <Message Id="GetType" TypeName="IdentifiersShouldNotMatchKeywords" Category="Microsoft.Naming" CheckId="CA1716" Status="Active" Created="2015-04-30 19:49:06Z" FixCategory="Breaking">
+             <Issue Name="Member" Certainty="95" Level="Error">Rename virtual/interface member 'IHideObjectMembers.GetType()' so that it no longer conflicts with the reserved language keyword 'GetType'. Using a reserved keyword as the name of a virtual/interface member makes it harder for consumers in other languages to override/implement the member.</Issue>
+            </Message>
+            <Message TypeName="UsePropertiesWhereAppropriate" Category="Microsoft.Design" CheckId="CA1024" Status="Active" Created="2015-04-30 19:49:06Z" FixCategory="Breaking">
+             <Issue Certainty="50" Level="Warning">Change 'IHideObjectMembers.GetType()' to a property if appropriate.</Issue>
+            </Message>
+           </Messages>
+          </Member>
+         </Members>
+        </Type>
+        <Type Name="IHtmlNode" Kind="Interface" Accessibility="Public" ExternallyVisible="True">
+         <Members>
+          <Member Name="#Attributes(System.Object)" Kind="Method" Static="False" Accessibility="Public" ExternallyVisible="True">
+           <Messages>
+            <Message Id="0#" TypeName="ParameterNamesShouldNotMatchMemberNames" Category="Microsoft.Naming" CheckId="CA1719" Status="Active" Created="2015-04-30 19:49:06Z" FixCategory="Breaking">
+             <Issue Certainty="95" Level="Error">Change either member or parameter name 'attributes' so that one differs from the other.</Issue>
+            </Message>
+           </Messages>
+          </Member>
+          <Member Name="#Attributes`2(System.Collections.Generic.IDictionary`2&lt;!!0,!!1&gt;)" Kind="Method" Static="False" Accessibility="Public" ExternallyVisible="True">
+           <Messages>
+            <Message Id="0#" TypeName="ParameterNamesShouldNotMatchMemberNames" Category="Microsoft.Naming" CheckId="CA1719" Status="Active" Created="2015-04-30 19:49:06Z" FixCategory="Breaking">
+             <Issue Certainty="95" Level="Error">Change either member or parameter name 'attributes' so that one differs from the other.</Issue>
+            </Message>
+           </Messages>
+          </Member>
+          <Member Name="#Attributes`2(System.Collections.Generic.IDictionary`2&lt;!!0,!!1&gt;,System.Boolean)" Kind="Method" Static="False" Accessibility="Public" ExternallyVisible="True">
+           <Messages>
+            <Message Id="0#" TypeName="ParameterNamesShouldNotMatchMemberNames" Category="Microsoft.Naming" CheckId="CA1719" Status="Active" Created="2015-04-30 19:49:06Z" FixCategory="Breaking">
+             <Issue Certainty="95" Level="Error">Change either member or parameter name 'attributes' so that one differs from the other.</Issue>
+            </Message>
+           </Messages>
+          </Member>
+          <Member Name="#ToggleClass(System.String,System.Boolean)" Kind="Method" Static="False" Accessibility="Public" ExternallyVisible="True">
+           <Messages>
+            <Message Id="class" TypeName="IdentifiersShouldNotMatchKeywords" Category="Microsoft.Naming" CheckId="CA1716" Status="Active" Created="2015-04-30 19:49:06Z" FixCategory="Breaking">
+             <Issue Name="MemberParameter" Certainty="95" Level="Error">In virtual/interface member 'IHtmlNode.ToggleClass(string, bool)', rename parameter 'class' so that it no longer conflicts with the reserved language keyword 'class'. Using a reserved keyword as the name of a parameter on a virtual/interface member makes it harder for consumers in other languages to override/implement the member.</Issue>
+            </Message>
+           </Messages>
+          </Member>
+         </Members>
+        </Type>
+        <Type Name="ImageMapType" Kind="Class" Accessibility="Public" ExternallyVisible="True">
+         <Members>
+          <Member Name="#TileUrlPattern" Kind="Property" Static="False" Accessibility="Public" ExternallyVisible="True">
+           <Messages>
+            <Message TypeName="UriPropertiesShouldNotBeStrings" Category="Microsoft.Design" CheckId="CA1056" Status="Active" Created="2015-04-30 19:49:06Z" FixCategory="Breaking">
+             <Issue Certainty="75" Level="Error">Change the type of property 'ImageMapType.TileUrlPattern' from string to System.Uri.</Issue>
+            </Message>
+           </Messages>
+          </Member>
+         </Members>
+        </Type>
+        <Type Name="ImageMapTypeBuilder" Kind="Class" Accessibility="Public" ExternallyVisible="True">
+         <Members>
+          <Member Name="#TileUrlPattern(System.String)" Kind="Method" Static="False" Accessibility="Public" ExternallyVisible="True">
+           <Messages>
+            <Message Id="0" TypeName="Validate arguments of public methods" Category="Microsoft.Design" CheckId="CA1062" Status="Active" Created="2015-04-30 19:49:06Z" FixCategory="DependsOnFix">
+             <Issue Certainty="75" Level="Warning" Path="c:\Users\Laurentiu\Documents\GitHub\GMap-Test\Jmelosegui.Mvc.Googlemap\MapType\ImageMapType" File="ImageMapTypeBuilder.cs" Line="35">In externally visible method 'ImageMapTypeBuilder.TileUrlPattern(string)', validate parameter 'value' before using it.</Issue>
+            </Message>
+           </Messages>
+          </Member>
+         </Members>
+        </Type>
+        <Type Name="LiteralNode" Kind="Class" Accessibility="Public" ExternallyVisible="True">
+         <Members>
+          <Member Name="#AppendTo(Jmelosegui.Mvc.Googlemap.IHtmlNode)" Kind="Method" Static="False" Accessibility="Public" ExternallyVisible="True">
+           <Messages>
+            <Message Id="0" TypeName="Validate arguments of public methods" Category="Microsoft.Design" CheckId="CA1062" Status="Active" Created="2015-04-30 19:49:06Z" FixCategory="DependsOnFix">
+             <Issue Certainty="75" Level="Warning" Path="c:\Users\Laurentiu\Documents\GitHub\GMap-Test\Jmelosegui.Mvc.Googlemap\Helpers" File="LiteralNode.cs" Line="121">In externally visible method 'LiteralNode.AppendTo(IHtmlNode)', validate parameter 'parent' before using it.</Issue>
+            </Message>
+           </Messages>
+          </Member>
+          <Member Name="#WriteTo(System.IO.TextWriter)" Kind="Method" Static="False" Accessibility="Public" ExternallyVisible="True">
+           <Messages>
+            <Message Id="0" TypeName="Validate arguments of public methods" Category="Microsoft.Design" CheckId="CA1062" Status="Active" Created="2015-04-30 19:49:06Z" FixCategory="DependsOnFix">
+             <Issue Certainty="75" Level="Warning" Path="c:\Users\Laurentiu\Documents\GitHub\GMap-Test\Jmelosegui.Mvc.Googlemap\Helpers" File="LiteralNode.cs" Line="117">In externally visible method 'LiteralNode.WriteTo(TextWriter)', validate parameter 'output' before using it.</Issue>
+            </Message>
+           </Messages>
+          </Member>
+         </Members>
+        </Type>
+        <Type Name="MapTypeBuilder`1" Kind="Class" Accessibility="Public" ExternallyVisible="True">
+         <Members>
+          <Member Name="#MapTypeAltName(System.String)" Kind="Method" Static="False" Accessibility="Public" ExternallyVisible="True">
+           <Messages>
+            <Message Id="0#" TypeName="ParameterNamesShouldNotMatchMemberNames" Category="Microsoft.Naming" CheckId="CA1719" Status="Active" Created="2015-04-30 19:49:06Z" FixCategory="Breaking">
+             <Issue Certainty="95" Level="Error" Path="c:\Users\Laurentiu\Documents\GitHub\GMap-Test\Jmelosegui.Mvc.Googlemap\MapType" File="MapTypeBuilder.cs" Line="13">Change either member or parameter name 'mapTypeAltName' so that one differs from the other.</Issue>
+            </Message>
+           </Messages>
+          </Member>
+          <Member Name="#MaxZoom(System.Int32)" Kind="Method" Static="False" Accessibility="Public" ExternallyVisible="True">
+           <Messages>
+            <Message Id="0#" TypeName="ParameterNamesShouldNotMatchMemberNames" Category="Microsoft.Naming" CheckId="CA1719" Status="Active" Created="2015-04-30 19:49:06Z" FixCategory="Breaking">
+             <Issue Certainty="95" Level="Error" Path="c:\Users\Laurentiu\Documents\GitHub\GMap-Test\Jmelosegui.Mvc.Googlemap\MapType" File="MapTypeBuilder.cs" Line="19">Change either member or parameter name 'maxZoom' so that one differs from the other.</Issue>
+            </Message>
+           </Messages>
+          </Member>
+          <Member Name="#MinZoom(System.Int32)" Kind="Method" Static="False" Accessibility="Public" ExternallyVisible="True">
+           <Messages>
+            <Message Id="0#" TypeName="ParameterNamesShouldNotMatchMemberNames" Category="Microsoft.Naming" CheckId="CA1719" Status="Active" Created="2015-04-30 19:49:06Z" FixCategory="Breaking">
+             <Issue Certainty="95" Level="Error" Path="c:\Users\Laurentiu\Documents\GitHub\GMap-Test\Jmelosegui.Mvc.Googlemap\MapType" File="MapTypeBuilder.cs" Line="25">Change either member or parameter name 'minZoom' so that one differs from the other.</Issue>
+            </Message>
+           </Messages>
+          </Member>
+         </Members>
+        </Type>
+        <Type Name="MapTypes" Kind="Enum" Accessibility="Public" ExternallyVisible="True">
+         <Messages>
+          <Message TypeName="OnlyFlagsEnumsShouldHavePluralNames" Category="Microsoft.Naming" CheckId="CA1717" Status="Active" Created="2015-04-30 19:49:06Z" FixCategory="Breaking">
+           <Issue Certainty="75" Level="Error">If the name 'MapTypes' is plural, change it to its singular form.</Issue>
+          </Message>
+         </Messages>
+        </Type>
+        <Type Name="MapTypeStyle" Kind="Class" Accessibility="Public" ExternallyVisible="True">
+         <Messages>
+          <Message Id="TypeStyle" TypeName="CompoundWordsShouldBeCasedCorrectly" Category="Microsoft.Naming" CheckId="CA1702" Status="Active" Created="2015-04-30 19:49:06Z" FixCategory="Breaking">
+           <Issue Name="TypeShouldBeDiscreteTerm" Certainty="80" Level="Error">The compound word 'TypeStyle' in type name 'MapTypeStyle' exists as a discrete term. If your usage is intended to be single word, case it as 'Typestyle'.</Issue>
+          </Message>
+         </Messages>
+         <Members>
+          <Member Name="#Stylers" Kind="Property" Static="False" Accessibility="Public" ExternallyVisible="True">
+           <Messages>
+            <Message TypeName="CollectionPropertiesShouldBeReadOnly" Category="Microsoft.Usage" CheckId="CA2227" Status="Active" Created="2015-04-30 19:49:06Z" FixCategory="Breaking">
+             <Issue Certainty="75" Level="Warning">Change 'MapTypeStyle.Stylers' to be read-only by removing the property setter.</Issue>
+            </Message>
+            <Message TypeName="DoNotExposeGenericLists" Category="Microsoft.Design" CheckId="CA1002" Status="Active" Created="2015-04-30 19:49:06Z" FixCategory="Breaking">
+             <Issue Certainty="95" Level="Error">Change 'List&lt;object&gt;' in 'MapTypeStyle.Stylers' to use Collection&lt;T&gt;, ReadOnlyCollection&lt;T&gt; or KeyedCollection&lt;K,V&gt;</Issue>
+            </Message>
+            <Message Id="Stylers" TypeName="IdentifiersShouldBeSpelledCorrectly" Category="Microsoft.Naming" CheckId="CA1704" Status="Active" Created="2015-04-30 19:49:06Z" FixCategory="Breaking">
+             <Issue Name="Member" Certainty="75" Level="CriticalWarning">Correct the spelling of 'Stylers' in member name 'MapTypeStyle.Stylers' or remove it entirely if it represents any sort of Hungarian notation.</Issue>
+            </Message>
+           </Messages>
+          </Member>
+         </Members>
+        </Type>
+        <Type Name="MapTypeStyleBuilder" Kind="Class" Accessibility="Public" ExternallyVisible="True">
+         <Messages>
+          <Message Id="TypeStyle" TypeName="CompoundWordsShouldBeCasedCorrectly" Category="Microsoft.Naming" CheckId="CA1702" Status="Active" Created="2015-04-30 19:49:06Z" FixCategory="Breaking">
+           <Issue Name="TypeShouldBeDiscreteTerm" Certainty="80" Level="Error">The compound word 'TypeStyle' in type name 'MapTypeStyleBuilder' exists as a discrete term. If your usage is intended to be single word, case it as 'Typestyle'.</Issue>
+          </Message>
+         </Messages>
+         <Members>
+          <Member Name="#Color(System.Drawing.Color)" Kind="Method" Static="False" Accessibility="Public" ExternallyVisible="True">
+           <Messages>
+            <Message Id="0#" TypeName="ParameterNamesShouldNotMatchMemberNames" Category="Microsoft.Naming" CheckId="CA1719" Status="Active" Created="2015-04-30 19:49:06Z" FixCategory="Breaking">
+             <Issue Certainty="95" Level="Error" Path="c:\Users\Laurentiu\Documents\GitHub\GMap-Test\Jmelosegui.Mvc.Googlemap\MapType\StyledMapType\Styles" File="MapTypeStyleBuilder.cs" Line="26">Change either member or parameter name 'color' so that one differs from the other.</Issue>
+            </Message>
+           </Messages>
+          </Member>
+          <Member Name="#ElementType(Jmelosegui.Mvc.Googlemap.ElementType)" Kind="Method" Static="False" Accessibility="Public" ExternallyVisible="True">
+           <Messages>
+            <Message Id="0#" TypeName="ParameterNamesShouldNotMatchMemberNames" Category="Microsoft.Naming" CheckId="CA1719" Status="Active" Created="2015-04-30 19:49:06Z" FixCategory="Breaking">
+             <Issue Certainty="95" Level="Error" Path="c:\Users\Laurentiu\Documents\GitHub\GMap-Test\Jmelosegui.Mvc.Googlemap\MapType\StyledMapType\Styles" File="MapTypeStyleBuilder.cs" Line="20">Change either member or parameter name 'elementType' so that one differs from the other.</Issue>
+            </Message>
+           </Messages>
+          </Member>
+          <Member Name="#FeatureType(Jmelosegui.Mvc.Googlemap.FeatureType)" Kind="Method" Static="False" Accessibility="Public" ExternallyVisible="True">
+           <Messages>
+            <Message Id="0#" TypeName="ParameterNamesShouldNotMatchMemberNames" Category="Microsoft.Naming" CheckId="CA1719" Status="Active" Created="2015-04-30 19:49:06Z" FixCategory="Breaking">
+             <Issue Certainty="95" Level="Error" Path="c:\Users\Laurentiu\Documents\GitHub\GMap-Test\Jmelosegui.Mvc.Googlemap\MapType\StyledMapType\Styles" File="MapTypeStyleBuilder.cs" Line="14">Change either member or parameter name 'featureType' so that one differs from the other.</Issue>
+            </Message>
+           </Messages>
+          </Member>
+          <Member Name="#Gamma(System.Single)" Kind="Method" Static="False" Accessibility="Public" ExternallyVisible="True">
+           <Messages>
+            <Message Id="0#" TypeName="ParameterNamesShouldNotMatchMemberNames" Category="Microsoft.Naming" CheckId="CA1719" Status="Active" Created="2015-04-30 19:49:06Z" FixCategory="Breaking">
+             <Issue Certainty="95" Level="Error" Path="c:\Users\Laurentiu\Documents\GitHub\GMap-Test\Jmelosegui.Mvc.Googlemap\MapType\StyledMapType\Styles" File="MapTypeStyleBuilder.cs" Line="32">Change either member or parameter name 'gamma' so that one differs from the other.</Issue>
+            </Message>
+           </Messages>
+          </Member>
+          <Member Name="#HueColor(System.Drawing.Color)" Kind="Method" Static="False" Accessibility="Public" ExternallyVisible="True">
+           <Messages>
+            <Message Id="0#" TypeName="ParameterNamesShouldNotMatchMemberNames" Category="Microsoft.Naming" CheckId="CA1719" Status="Active" Created="2015-04-30 19:49:06Z" FixCategory="Breaking">
+             <Issue Certainty="95" Level="Error" Path="c:\Users\Laurentiu\Documents\GitHub\GMap-Test\Jmelosegui.Mvc.Googlemap\MapType\StyledMapType\Styles" File="MapTypeStyleBuilder.cs" Line="38">Change either member or parameter name 'hueColor' so that one differs from the other.</Issue>
+            </Message>
+           </Messages>
+          </Member>
+         </Members>
+        </Type>
+        <Type Name="MapTypeStyleFactory" Kind="Class" Accessibility="Public" ExternallyVisible="True">
+         <Messages>
+          <Message Id="TypeStyle" TypeName="CompoundWordsShouldBeCasedCorrectly" Category="Microsoft.Naming" CheckId="CA1702" Status="Active" Created="2015-04-30 19:49:06Z" FixCategory="Breaking">
+           <Issue Name="TypeShouldBeDiscreteTerm" Certainty="80" Level="Error">The compound word 'TypeStyle' in type name 'MapTypeStyleFactory' exists as a discrete term. If your usage is intended to be single word, case it as 'Typestyle'.</Issue>
+          </Message>
+         </Messages>
+        </Type>
+        <Type Name="MapTypeStylerVisibility" Kind="Enum" Accessibility="Public" ExternallyVisible="True">
+         <Messages>
+          <Message Id="Styler" TypeName="IdentifiersShouldBeSpelledCorrectly" Category="Microsoft.Naming" CheckId="CA1704" Status="Active" Created="2015-04-30 19:49:06Z" FixCategory="Breaking">
+           <Issue Name="Type" Certainty="75" Level="CriticalWarning">Correct the spelling of 'Styler' in type name 'MapTypeStylerVisibility'.</Issue>
+          </Message>
+         </Messages>
+        </Type>
+        <Type Name="ScriptRegistrar" Kind="Class" Accessibility="Public" ExternallyVisible="True">
+         <Members>
+          <Member Name="#.ctor(Jmelosegui.Mvc.Googlemap.GoogleMap)" Kind="Method" Static="False" Accessibility="Public" ExternallyVisible="True">
+           <Messages>
+            <Message Id="ScriptRegistrar" TypeName="Literals should be spelled correctly" Category="Microsoft.Naming" CheckId="CA2204" Status="Active" Created="2015-04-30 19:49:06Z" FixCategory="DependsOnFix">
+             <Issue Certainty="75" Level="Warning" Path="c:\Users\Laurentiu\Documents\GitHub\GMap-Test\Jmelosegui.Mvc.Googlemap" File="ScriptRegistrar.cs" Line="22">Correct the spelling of the unrecognized token 'ScriptRegistrar' in the literal '"Only one ScriptRegistrar is allowed in a single request"'.</Issue>
+            </Message>
+            <Message Id="0" TypeName="Validate arguments of public methods" Category="Microsoft.Design" CheckId="CA1062" Status="Active" Created="2015-04-30 19:49:06Z" FixCategory="DependsOnFix">
+             <Issue Certainty="75" Level="Warning" Path="c:\Users\Laurentiu\Documents\GitHub\GMap-Test\Jmelosegui.Mvc.Googlemap" File="ScriptRegistrar.cs" Line="18">In externally visible method 'ScriptRegistrar.ScriptRegistrar(GoogleMap)', validate parameter 'component' before using it.</Issue>
+            </Message>
+           </Messages>
+          </Member>
+          <Member Name="#CombinePath(System.String,System.String)" Kind="Method" Static="True" Accessibility="Public" ExternallyVisible="True">
+           <Messages>
+            <Message Id="0" TypeName="Validate arguments of public methods" Category="Microsoft.Design" CheckId="CA1062" Status="Active" Created="2015-04-30 19:49:06Z" FixCategory="DependsOnFix">
+             <Issue Certainty="75" Level="Warning" Path="c:\Users\Laurentiu\Documents\GitHub\GMap-Test\Jmelosegui.Mvc.Googlemap" File="ScriptRegistrar.cs" Line="110">In externally visible method 'ScriptRegistrar.CombinePath(string, string)', validate parameter 'directory' before using it.</Issue>
+            </Message>
+            <Message Id="1" TypeName="Validate arguments of public methods" Category="Microsoft.Design" CheckId="CA1062" Status="Active" Created="2015-04-30 19:49:06Z" FixCategory="DependsOnFix">
+             <Issue Certainty="75" Level="Warning" Path="c:\Users\Laurentiu\Documents\GitHub\GMap-Test\Jmelosegui.Mvc.Googlemap" File="ScriptRegistrar.cs" Line="110">In externally visible method 'ScriptRegistrar.CombinePath(string, string)', validate parameter 'fileName' before using it.</Issue>
+            </Message>
+           </Messages>
+          </Member>
+          <Member Name="#ToHtmlString()" Kind="Method" Static="False" Accessibility="Public" ExternallyVisible="True">
+           <Messages>
+            <Message Id="System.IO.StringWriter.#ctor" TypeName="SpecifyIFormatProvider" Category="Microsoft.Globalization" CheckId="CA1305" Status="Active" Created="2015-04-30 19:49:06Z" FixCategory="NonBreaking">
+             <Issue Name="IFormatProviderAlternate" Certainty="95" Level="Error" Path="c:\Users\Laurentiu\Documents\GitHub\GMap-Test\Jmelosegui.Mvc.Googlemap" File="ScriptRegistrar.cs" Line="98">Because the behavior of 'StringWriter.StringWriter()' could vary based on the current user's locale settings, replace this call in 'ScriptRegistrar.ToHtmlString()' with a call to 'StringWriter.StringWriter(IFormatProvider)'. If the result of 'StringWriter.StringWriter(IFormatProvider)' will be based on input from the user, specify 'CultureInfo.CurrentCulture' as the 'IFormatProvider' parameter. Otherwise, if the result will based on input stored and accessed by software, such as when it is loaded from disk or from a database, specify 'CultureInfo.InvariantCulture'.</Issue>
+            </Message>
+           </Messages>
+          </Member>
+         </Members>
+        </Type>
+       </Types>
+      </Namespace>
+      <Namespace Name="Jmelosegui.Mvc.Googlemap.Overlays">
+       <Types>
+        <Type Name="InfoWindow" Kind="Class" Accessibility="Public" ExternallyVisible="True">
+         <Members>
+          <Member Name="#.ctor(Jmelosegui.Mvc.Googlemap.Overlays.Marker)" Kind="Method" Static="False" Accessibility="Public" ExternallyVisible="True">
+           <Messages>
+            <Message Id="System.String.Format(System.String,System.Object,System.Object)" TypeName="SpecifyIFormatProvider" Category="Microsoft.Globalization" CheckId="CA1305" Status="Active" Created="2015-04-30 19:49:06Z" FixCategory="NonBreaking">
+             <Issue Name="IFormatProviderAlternateString" Certainty="95" Level="Error" Path="c:\Users\Laurentiu\Documents\GitHub\GMap-Test\Jmelosegui.Mvc.Googlemap\Overlays\InfoWindow" File="InfoWindow.cs" Line="16">Because the behavior of 'string.Format(string, object, object)' could vary based on the current user's locale settings, replace this call in 'InfoWindow.InfoWindow(Marker)' with a call to 'string.Format(IFormatProvider, string, params object[])'. If the result of 'string.Format(IFormatProvider, string, params object[])' will be displayed to the user, specify 'CultureInfo.CurrentCulture' as the 'IFormatProvider' parameter. Otherwise, if the result will be stored and accessed by software, such as when it is persisted to disk or to a database, specify 'CultureInfo.InvariantCulture'.</Issue>
+            </Message>
+            <Message Id="0" TypeName="Validate arguments of public methods" Category="Microsoft.Design" CheckId="CA1062" Status="Active" Created="2015-04-30 19:49:06Z" FixCategory="DependsOnFix">
+             <Issue Certainty="75" Level="Warning" Path="c:\Users\Laurentiu\Documents\GitHub\GMap-Test\Jmelosegui.Mvc.Googlemap\Overlays\InfoWindow" File="InfoWindow.cs" Line="11">In externally visible method 'InfoWindow.InfoWindow(Marker)', validate parameter 'marker' before using it.</Issue>
+            </Message>
+           </Messages>
+          </Member>
+         </Members>
+        </Type>
+        <Type Name="InfoWindowBuilder" Kind="Class" Accessibility="Public" ExternallyVisible="True">
+         <Members>
+          <Member Name="#Content(System.Action)" Kind="Method" Static="False" Accessibility="Public" ExternallyVisible="True">
+           <Messages>
+            <Message Id="0#" TypeName="ParameterNamesShouldNotMatchMemberNames" Category="Microsoft.Naming" CheckId="CA1719" Status="Active" Created="2015-04-30 19:49:06Z" FixCategory="Breaking">
+             <Issue Certainty="95" Level="Error" Path="c:\Users\Laurentiu\Documents\GitHub\GMap-Test\Jmelosegui.Mvc.Googlemap\Overlays\InfoWindow" File="InfoWindowBuilder.cs" Line="15">Change either member or parameter name 'content' so that one differs from the other.</Issue>
+            </Message>
+           </Messages>
+          </Member>
+          <Member Name="#Content(System.Func`2&lt;System.Object,System.Object&gt;)" Kind="Method" Static="False" Accessibility="Public" ExternallyVisible="True">
+           <Messages>
+            <Message Id="0#" TypeName="ParameterNamesShouldNotMatchMemberNames" Category="Microsoft.Naming" CheckId="CA1719" Status="Active" Created="2015-04-30 19:49:06Z" FixCategory="Breaking">
+             <Issue Certainty="95" Level="Error" Path="c:\Users\Laurentiu\Documents\GitHub\GMap-Test\Jmelosegui.Mvc.Googlemap\Overlays\InfoWindow" File="InfoWindowBuilder.cs" Line="21">Change either member or parameter name 'content' so that one differs from the other.</Issue>
+            </Message>
+           </Messages>
+          </Member>
+         </Members>
+        </Type>
+        <Type Name="Marker" Kind="Class" Accessibility="Public" ExternallyVisible="True">
+         <Members>
+          <Member Name="#Draggable" Kind="Property" Static="False" Accessibility="Public" ExternallyVisible="True">
+           <Messages>
+            <Message Id="Draggable" TypeName="IdentifiersShouldBeSpelledCorrectly" Category="Microsoft.Naming" CheckId="CA1704" Status="Active" Created="2015-04-30 19:49:06Z" FixCategory="Breaking">
+             <Issue Name="Member" Certainty="75" Level="CriticalWarning">Correct the spelling of 'Draggable' in member name 'Marker.Draggable' or remove it entirely if it represents any sort of Hungarian notation.</Issue>
+            </Message>
+           </Messages>
+          </Member>
+         </Members>
+        </Type>
+        <Type Name="MarkerBuilder" Kind="Class" Accessibility="Public" ExternallyVisible="True">
+         <Members>
+          <Member Name="#Draggable(System.Boolean)" Kind="Method" Static="False" Accessibility="Public" ExternallyVisible="True">
+           <Messages>
+            <Message Id="Draggable" TypeName="IdentifiersShouldBeSpelledCorrectly" Category="Microsoft.Naming" CheckId="CA1704" Status="Active" Created="2015-04-30 19:49:06Z" FixCategory="Breaking">
+             <Issue Name="Member" Certainty="75" Level="CriticalWarning" Path="c:\Users\Laurentiu\Documents\GitHub\GMap-Test\Jmelosegui.Mvc.Googlemap\Overlays\Markers" File="MarkerBuilder.cs" Line="24">Correct the spelling of 'Draggable' in member name 'MarkerBuilder.Draggable(bool)' or remove it entirely if it represents any sort of Hungarian notation.</Issue>
+            </Message>
+           </Messages>
+          </Member>
+         </Members>
+        </Type>
+        <Type Name="MarkerClusteringOptions" Kind="Class" Accessibility="Public" ExternallyVisible="True">
+         <Members>
+          <Member Name="#CustomStyles" Kind="Property" Static="False" Accessibility="Public" ExternallyVisible="True">
+           <Messages>
+            <Message TypeName="DoNotExposeGenericLists" Category="Microsoft.Design" CheckId="CA1002" Status="Active" Created="2015-04-30 19:49:06Z" FixCategory="Breaking">
+             <Issue Certainty="95" Level="Error" Path="c:\Users\Laurentiu\Documents\GitHub\GMap-Test\Jmelosegui.Mvc.Googlemap\Overlays\Markers\Clustering" File="MarkerClusteringOptions.cs" Line="31">Change 'List&lt;MarkerClusteringStyles&gt;' in 'MarkerClusteringOptions.CustomStyles' to use Collection&lt;T&gt;, ReadOnlyCollection&lt;T&gt; or KeyedCollection&lt;K,V&gt;</Issue>
+            </Message>
+           </Messages>
+          </Member>
+         </Members>
+        </Type>
+        <Type Name="MarkerClusteringOptionsFactory" Kind="Class" Accessibility="Public" ExternallyVisible="True">
+         <Members>
+          <Member Name="#CustomStyles" Kind="Property" Static="False" Accessibility="Public" ExternallyVisible="True">
+           <Messages>
+            <Message TypeName="DoNotExposeGenericLists" Category="Microsoft.Design" CheckId="CA1002" Status="Active" Created="2015-04-30 19:49:06Z" FixCategory="Breaking">
+             <Issue Certainty="95" Level="Error" Path="c:\Users\Laurentiu\Documents\GitHub\GMap-Test\Jmelosegui.Mvc.Googlemap\Overlays\Markers\Clustering" File="MarkerClusteringOptionsFactory.cs" Line="76">Change 'List&lt;MarkerClusteringStyles&gt;' in 'MarkerClusteringOptionsFactory.CustomStyles' to use Collection&lt;T&gt;, ReadOnlyCollection&lt;T&gt; or KeyedCollection&lt;K,V&gt;</Issue>
+            </Message>
+           </Messages>
+          </Member>
+         </Members>
+        </Type>
+        <Type Name="MarkerClusteringStyles" Kind="Class" Accessibility="Public" ExternallyVisible="True">
+         <Members>
+          <Member Name="#Url" Kind="Property" Static="False" Accessibility="Public" ExternallyVisible="True">
+           <Messages>
+            <Message TypeName="UriPropertiesShouldNotBeStrings" Category="Microsoft.Design" CheckId="CA1056" Status="Active" Created="2015-04-30 19:49:06Z" FixCategory="Breaking">
+             <Issue Certainty="75" Level="Error" Path="c:\Users\Laurentiu\Documents\GitHub\GMap-Test\Jmelosegui.Mvc.Googlemap\Overlays\Markers\Clustering" File="MarkerClusteringStyles.cs" Line="11">Change the type of property 'MarkerClusteringStyles.Url' from string to System.Uri.</Issue>
+            </Message>
+           </Messages>
+          </Member>
+         </Members>
+        </Type>
+        <Type Name="OverlayBinding`2" Kind="Class" Accessibility="Public" ExternallyVisible="True">
+         <Members>
+          <Member Name="#Jmelosegui.Mvc.Googlemap.Overlays.IOverlayBinding`1&lt;!0&gt;.ItemDataBound(!0,System.Object)" Kind="Method" Static="False" Accessibility="Private" ExternallyVisible="True">
+           <Messages>
+            <Message TypeName="InterfaceMethodsShouldBeCallableByChildTypes" Category="Microsoft.Design" CheckId="CA1033" Status="Active" Created="2015-04-30 19:49:06Z" FixCategory="NonBreaking">
+             <Issue Certainty="95" Level="Error" Path="c:\Users\Laurentiu\Documents\GitHub\GMap-Test\Jmelosegui.Mvc.Googlemap\Overlays" File="IOverlayBinding.cs" Line="16">Make 'OverlayBinding&lt;TGoogleMapOverlay, TDataItem&gt;' sealed (a breaking change if this class has previously shipped), implement the method non-explicitly, or implement a new method that exposes the functionality of 'IOverlayBinding&lt;TGoogleMapOverlay&gt;.ItemDataBound(TGoogleMapOverlay, object)' and is visible to derived classes.</Issue>
+            </Message>
+           </Messages>
+          </Member>
+         </Members>
+        </Type>
+        <Type Name="PolygonBuilder" Kind="Class" Accessibility="Public" ExternallyVisible="True">
+         <Members>
+          <Member Name="#Points(System.Action`1&lt;Jmelosegui.Mvc.Googlemap.Overlays.LocationFactory`1&lt;Jmelosegui.Mvc.Googlemap.Overlays.Polygon&gt;&gt;)" Kind="Method" Static="False" Accessibility="Public" ExternallyVisible="True">
+           <Messages>
+            <Message TypeName="DoNotNestGenericTypesInMemberSignatures" Category="Microsoft.Design" CheckId="CA1006" Status="Active" Created="2015-04-30 19:49:06Z" FixCategory="Breaking">
+             <Issue Certainty="95" Level="CriticalError" Path="c:\Users\Laurentiu\Documents\GitHub\GMap-Test\Jmelosegui.Mvc.Googlemap\Overlays\Shapes\Polygons" File="PolygonBuilder.cs" Line="15">Consider a design where 'PolygonBuilder.Points(Action&lt;LocationFactory&lt;Polygon&gt;&gt;)' doesn't nest generic type 'Action&lt;LocationFactory&lt;Polygon&gt;&gt;'.</Issue>
+            </Message>
+           </Messages>
+          </Member>
+         </Members>
+        </Type>
+        <Type Name="ShapeBuilder`1" Kind="Class" Accessibility="Public" ExternallyVisible="True">
+         <Members>
+          <Member Name="#zIndex(System.Int32)" Kind="Method" Static="False" Accessibility="Public" ExternallyVisible="True">
+           <Messages>
+            <Message Id="z" TypeName="IdentifiersShouldBeCasedCorrectly" Category="Microsoft.Naming" CheckId="CA1709" Status="Active" Created="2015-04-30 19:49:06Z" FixCategory="Breaking">
+             <Issue Name="Member" Certainty="85" Level="Error" Path="c:\Users\Laurentiu\Documents\GitHub\GMap-Test\Jmelosegui.Mvc.Googlemap\Overlays\Shapes" File="ShapeBuilder.cs" Line="51">Correct the casing of 'z' in member name 'ShapeBuilder&lt;TShape&gt;.zIndex(int)' by changing it to 'Z'.</Issue>
+            </Message>
+           </Messages>
+          </Member>
+         </Members>
+        </Type>
+       </Types>
+      </Namespace>
+     </Namespaces>
+    </Module>
+   </Modules>
+  </Target>
+ </Targets>
+ <Rules>
+  <Rule TypeName="AssembliesShouldHaveValidStrongNames" Category="Microsoft.Design" CheckId="CA2210">
+   <Name>Assemblies should have valid strong names</Name>
+   <Description>Either the assembly has no strong name, an invalid one, or the strong name is valid only because of the computer configuration. The assembly should not be deployed in this state. The most common causes of this are: 1) The assembly's contents were modified after it was signed. 2) The signing process failed. 3) The assembly was delay-signed. 4) A registry key existed that allowed the check to pass (where it would not have otherwise).</Description>
+   <Resolution Name="NoStrongName">Sign {0} with a strong name key.</Resolution>
+   <Owner />
+   <Url>http://msdn.microsoft.com/library/ms182127.aspx</Url>
+   <Email>[none]</Email>
+   <MessageLevel Certainty="95">CriticalError</MessageLevel>
+   <File Name="designrules.dll" Version="12.0.0.0" />
+  </Rule>
+  <Rule TypeName="AvoidExcessiveClassCoupling" Category="Microsoft.Maintainability" CheckId="CA1506">
+   <Name>Avoid excessive class coupling</Name>
+   <Description>Types and methods with a high degree of class coupling can be difficult to maintain.</Description>
+   <Resolution Name="Method">{0} is coupled with {1} different types from {2} different namespaces. Rewrite or refactor the method to decrease its class coupling, or consider moving the method to one of the other types it is tightly coupled with. A class coupling above {3} indicates poor maintainability, a class coupling between {3} and {4} indicates moderate maintainability, and a class coupling below {4} indicates good maintainability.</Resolution>
+   <Owner />
+   <Url>http://msdn.microsoft.com/library/bb397994.aspx</Url>
+   <Email>[none]</Email>
+   <MessageLevel Certainty="90">Warning</MessageLevel>
+   <File Name="maintainabilityrules.dll" Version="12.0.0.0" />
+  </Rule>
+  <Rule TypeName="AvoidExcessiveComplexity" Category="Microsoft.Maintainability" CheckId="CA1502">
+   <Name>Avoid excessive complexity</Name>
+   <Description>Method implementations that are exceedingly complex increase the challenge of understanding and maintaining code.</Description>
+   <Resolution Name="Default">{0} has a cyclomatic complexity of {1}. Rewrite or refactor the method to reduce complexity to {2}.</Resolution>
+   <Owner />
+   <Url>http://msdn.microsoft.com/library/ms182212.aspx</Url>
+   <Email>[none]</Email>
+   <MessageLevel Certainty="90">Warning</MessageLevel>
+   <File Name="maintainabilityrules.dll" Version="12.0.0.0" />
+  </Rule>
+  <Rule TypeName="AvoidUnsealedAttributes" Category="Microsoft.Performance" CheckId="CA1813">
+   <Name>Avoid unsealed attributes</Name>
+   <Description>Seal attribute types for improved performance. Sealing attribute types speeds up performance during reflection on custom attributes.</Description>
+   <Resolution Name="Default">Seal {0}, if possible.</Resolution>
+   <Owner />
+   <Url>http://msdn.microsoft.com/library/ms182267.aspx</Url>
+   <Email>[none]</Email>
+   <MessageLevel Certainty="75">Warning</MessageLevel>
+   <File Name="performancerules.dll" Version="12.0.0.0" />
+  </Rule>
+  <Rule TypeName="CollectionPropertiesShouldBeReadOnly" Category="Microsoft.Usage" CheckId="CA2227">
+   <Name>Collection properties should be read only</Name>
+   <Description>Properties that return collections should be read-only so that users cannot entirely replace the backing store. Users can still modify the contents of the collection by calling relevant methods on the collection. Note that the XmlSerializer class has special support for deserializing read-only collections. See the XmlSerializer overview for more information.</Description>
+   <Resolution Name="Default">Change {0} to be read-only by removing the property setter.</Resolution>
+   <Owner />
+   <Url>http://msdn.microsoft.com/library/ms182327.aspx</Url>
+   <Email>[none]</Email>
+   <MessageLevel Certainty="75">Warning</MessageLevel>
+   <File Name="usagerules.dll" Version="12.0.0.0" />
+  </Rule>
+  <Rule TypeName="CompoundWordsShouldBeCasedCorrectly" Category="Microsoft.Naming" CheckId="CA1702">
+   <Name>Compound words should be cased correctly</Name>
+   <Description>Avoid creating compound words from terms which exist in the dictionary as discrete terms. Do not create a compound word such as 'StopWatch' or 'PopUp'. These terms are recognized in the dictionary and should be cased as 'Stopwatch' and 'Popup'.</Description>
+   <Resolution Name="MemberShouldBeDiscreteTerm">The compound word '{0}' in member name {1} exists as a discrete term. If your usage is intended to be single word, case it as '{2}' or strip the first token entirely if it represents any sort of Hungarian notation.</Resolution>
+   <Resolution Name="TypeShouldBeDiscreteTerm">The compound word '{0}' in type name {1} exists as a discrete term. If your usage is intended to be single word, case it as '{2}'.</Resolution>
+   <Owner />
+   <Url>http://msdn.microsoft.com/library/bb264474.aspx</Url>
+   <Email>[none]</Email>
+   <MessageLevel Certainty="80">Error</MessageLevel>
+   <File Name="namingrules.dll" Version="12.0.0.0" />
+  </Rule>
+  <Rule TypeName="DoNotExposeGenericLists" Category="Microsoft.Design" CheckId="CA1002">
+   <Name>Do not expose generic lists</Name>
+   <Description>Do not expose List&lt;T&gt; in object models. Use Collection&lt;T&gt;, ReadOnlyCollection&lt;T&gt; or KeyedCollection&lt;K,V&gt; instead. List&lt;T&gt; is meant to be used from implementation, not in object model API. List&lt;T&gt; is optimized for performance at the cost of long term versioning. For example, if you return List&lt;T&gt; to the client code, you will not ever be able to receive notifications when client code modifies the collection.</Description>
+   <Resolution Name="Default">Change {0} in {1} to use Collection&lt;T&gt;, ReadOnlyCollection&lt;T&gt; or KeyedCollection&lt;K,V&gt;</Resolution>
+   <Owner />
+   <Url>http://msdn.microsoft.com/library/ms182142.aspx</Url>
+   <Email>[none]</Email>
+   <MessageLevel Certainty="95">Error</MessageLevel>
+   <File Name="designrules.dll" Version="12.0.0.0" />
+  </Rule>
+  <Rule TypeName="DoNotNestGenericTypesInMemberSignatures" Category="Microsoft.Design" CheckId="CA1006">
+   <Name>Do not nest generic types in member signatures</Name>
+   <Description>Avoid API that require users to instantiate a generic type with another generic type as type argument. The syntax gets too complex.</Description>
+   <Resolution Name="Default">Consider a design where {0} doesn't nest generic type {1}.</Resolution>
+   <Owner />
+   <Url>http://msdn.microsoft.com/library/ms182144.aspx</Url>
+   <Email>[none]</Email>
+   <MessageLevel Certainty="95">CriticalError</MessageLevel>
+   <File Name="designrules.dll" Version="12.0.0.0" />
+  </Rule>
+  <Rule TypeName="DoNotRaiseReservedExceptionTypes" Category="Microsoft.Usage" CheckId="CA2201">
+   <Name>Do not raise reserved exception types</Name>
+   <Description>User code should not create and raise exceptions of certain types that are reserved by the runtime or which are of a too general exception type. Exception types that are too general include Exception, SystemException, and ApplicationException. Exception types that are reserved by the runtime include ThreadAbortException, OutOfMemoryException, ExecutionEngineException, and IndexOutOfRangeException.</Description>
+   <Resolution Name="TooGeneric">{0} creates an exception of type {1}, an exception type that is not sufficiently specific and should never be raised by user code. If this exception instance might be thrown, use a different exception type.</Resolution>
+   <Owner />
+   <Url>http://msdn.microsoft.com/library/ms182338.aspx</Url>
+   <Email>[none]</Email>
+   <MessageLevel Certainty="95">Error</MessageLevel>
+   <File Name="usagerules.dll" Version="12.0.0.0" />
+  </Rule>
+  <Rule TypeName="IdentifiersShouldBeCasedCorrectly" Category="Microsoft.Naming" CheckId="CA1709">
+   <Name>Identifiers should be cased correctly</Name>
+   <Description>Type, namespace, and member identifiers are Pascal-cased. Parameter identifiers are camel-cased. Two letter acronyms within these identifiers should be upper-cased, for example, use System.IO instead of System.Io. Acronyms of three or more letters should be Pascal-cased, for example, use System.Xml instead of System.XML. The pascal-casing convention capitalizes the first letter of each word, as in BackColor. The camel-casing convention formats the first letter of the first word in lowercase and capitalizes the first letter of all subsequent words, as in backgroundColor. Although it may be common practice for some two letter acronyms to not be fully capitalized, violations of this rule should not be excluded for this reason. For example, 'DbConnection', is common but incorrect; use DBConnection. A violation of this rule might be required for compatibility with existing, non-managed symbol schemes. In general, however, these symbols should not be visible outside the assembly that uses them.</Description>
+   <Resolution Name="Member">Correct the casing of '{0}' in member name {1} by changing it to '{2}'.</Resolution>
+   <Owner />
+   <Url>http://msdn.microsoft.com/library/ms182240.aspx</Url>
+   <Email>[none]</Email>
+   <MessageLevel Certainty="85">Error</MessageLevel>
+   <File Name="namingrules.dll" Version="12.0.0.0" />
+  </Rule>
+  <Rule TypeName="IdentifiersShouldBeSpelledCorrectly" Category="Microsoft.Naming" CheckId="CA1704">
+   <Name>Identifiers should be spelled correctly</Name>
+   <Description>The individual words that make up an identifier should not be abbreviated and should be spelled correctly. If this rule generates a false positive on a term that should be recognized, add the word to the FxCop custom dictionary.</Description>
+   <Resolution Name="Assembly">Correct the spelling of '{0}' in assembly name {1}.</Resolution>
+   <Resolution Name="Member">Correct the spelling of '{0}' in member name {1} or remove it entirely if it represents any sort of Hungarian notation.</Resolution>
+   <Resolution Name="MemberParameter">In method {0}, correct the spelling of '{1}' in parameter name {2} or remove it entirely if it represents any sort of Hungarian notation.</Resolution>
+   <Resolution Name="Namespace">Correct the spelling of '{0}' in namespace name '{1}'.</Resolution>
+   <Resolution Name="Type">Correct the spelling of '{0}' in type name {1}.</Resolution>
+   <Owner />
+   <Url>http://msdn.microsoft.com/library/bb264492.aspx</Url>
+   <Email>[none]</Email>
+   <MessageLevel Certainty="75">CriticalWarning</MessageLevel>
+   <File Name="namingrules.dll" Version="12.0.0.0" />
+  </Rule>
+  <Rule TypeName="IdentifiersShouldNotHaveIncorrectSuffix" Category="Microsoft.Naming" CheckId="CA1711">
+   <Name>Identifiers should not have incorrect suffix</Name>
+   <Description>Types that do not extend certain base types should not use reserved name suffixes. Types and members should not use 'Ex' or 'New' to distinguish them from an earlier version of the same API, instead, use a numeric suffix such as '2' or provide a more meaningful suffix. Concrete type implementations and members should not end 'Impl'. Members instead, should either consider using the suggested alternate 'Core' in replacement of 'Impl' or avoid any suffix at all.</Description>
+   <Resolution Name="TypeNoAlternate">Rename type name {0} so that it does not end in '{1}'.</Resolution>
+   <Owner />
+   <Url>http://msdn.microsoft.com/library/ms182247.aspx</Url>
+   <Email>[none]</Email>
+   <MessageLevel Certainty="95">CriticalError</MessageLevel>
+   <File Name="namingrules.dll" Version="12.0.0.0" />
+  </Rule>
+  <Rule TypeName="IdentifiersShouldNotMatchKeywords" Category="Microsoft.Naming" CheckId="CA1716">
+   <Name>Identifiers should not match keywords</Name>
+   <Description>Identifiers which conflict with reserved language keywords should be avoided. Using a reserved keyword as an identifier makes it harder for consumers in other languages to use your API.</Description>
+   <Resolution Name="Member">Rename virtual/interface member {0} so that it no longer conflicts with the reserved language keyword '{1}'. Using a reserved keyword as the name of a virtual/interface member makes it harder for consumers in other languages to override/implement the member.</Resolution>
+   <Resolution Name="MemberParameter">In virtual/interface member {0}, rename parameter {1} so that it no longer conflicts with the reserved language keyword '{2}'. Using a reserved keyword as the name of a parameter on a virtual/interface member makes it harder for consumers in other languages to override/implement the member.</Resolution>
+   <Owner />
+   <Url>http://msdn.microsoft.com/library/ms182248.aspx</Url>
+   <Email>[none]</Email>
+   <MessageLevel Certainty="95">Error</MessageLevel>
+   <File Name="namingrules.dll" Version="12.0.0.0" />
+  </Rule>
+  <Rule TypeName="InterfaceMethodsShouldBeCallableByChildTypes" Category="Microsoft.Design" CheckId="CA1033">
+   <Name>Interface methods should be callable by child types</Name>
+   <Description>Explicit method implementations are defined with private accessibility. Classes that derive from classes with explicit method implementations and choose to re-declare them on the class will not be able to call into the base class implementation unless the base class has provided an alternate method with appropriate accessibility. When overriding a base class method that has been hidden by explicit interface implementation, in order to call into the base class implementation, a derived class must cast the base pointer to the relevant interface. When calling through this reference, however, the derived class implementation will actually be invoked, resulting in recursion and an eventual stack overflow.</Description>
+   <Resolution Name="Default">Make {0} sealed (a breaking change if this class has previously shipped), implement the method non-explicitly, or implement a new method that exposes the functionality of {1} and is visible to derived classes.</Resolution>
+   <Owner />
+   <Url>http://msdn.microsoft.com/library/ms182153.aspx</Url>
+   <Email>[none]</Email>
+   <MessageLevel Certainty="95">Error</MessageLevel>
+   <File Name="designrules.dll" Version="12.0.0.0" />
+  </Rule>
+  <Rule TypeName="Literals should be spelled correctly" Category="Microsoft.Naming" CheckId="CA2204">
+   <Name>Literals should be spelled correctly</Name>
+   <Description>This rule parses the literal string into words, tokenizing compound words, and checks the spelling of each word/token.</Description>
+   <Resolution Name="Default">Correct the spelling of the unrecognized token '{0}' in the literal '{1}'.</Resolution>
+   <Owner>RuleOwner</Owner>
+   <Url>http://msdn.microsoft.com/library/bb264488.aspx</Url>
+   <Email />
+   <MessageLevel Certainty="75">Warning</MessageLevel>
+   <File Name="dataflowrules.dll" Version="12.0.0.0" />
+  </Rule>
+  <Rule TypeName="MarkAssembliesWithClsCompliant" Category="Microsoft.Design" CheckId="CA1014">
+   <Name>Mark assemblies with CLSCompliantAttribute</Name>
+   <Description>Assemblies should explicitly state their CLS compliance using the CLSCompliant attribute. An assembly without this attribute is not CLS-compliant. Assemblies, modules, and types can be CLS-compliant even if some parts of the assembly, module, or type are not CLS-compliant. The following rules apply: 1) If the element is marked CLSCompliant, any noncompliant members must have the CLSCompliant attribute present with its argument set to false. 2) A comparable CLS-compliant alternative member must be supplied for each member that is not CLS-compliant.</Description>
+   <Resolution Name="Default">Mark {0} with CLSCompliant(true) because it exposes externally visible types.</Resolution>
+   <Owner />
+   <Url>http://msdn.microsoft.com/library/ms182156.aspx</Url>
+   <Email>[none]</Email>
+   <MessageLevel Certainty="95">Error</MessageLevel>
+   <File Name="designrules.dll" Version="12.0.0.0" />
+  </Rule>
+  <Rule TypeName="NormalizeStringsToUppercase" Category="Microsoft.Globalization" CheckId="CA1308">
+   <Name>Normalize strings to uppercase</Name>
+   <Description>Strings should be normalized to upper-case.</Description>
+   <Resolution Name="ToUpperInvariant">In method {0}, replace the call to {1} with String.ToUpperInvariant().</Resolution>
+   <Owner />
+   <Url>http://msdn.microsoft.com/library/bb386042.aspx</Url>
+   <Email>[none]</Email>
+   <MessageLevel Certainty="90">Error</MessageLevel>
+   <File Name="globalizationrules.dll" Version="12.0.0.0" />
+  </Rule>
+  <Rule TypeName="OnlyFlagsEnumsShouldHavePluralNames" Category="Microsoft.Naming" CheckId="CA1717">
+   <Name>Only FlagsAttribute enums should have plural names</Name>
+   <Description>Plural names indicate that the values of the enumeration can be combined. For example, an enumeration named 'Day' indicates a single day, and an enumeration named 'Days' indicates multiple days. Enumeration values should be combined using the bit-wise OR operator only if the Flags attribute is present on the enumeration.</Description>
+   <Resolution Name="Default">If the name {0} is plural, change it to its singular form.</Resolution>
+   <Owner />
+   <Url>http://msdn.microsoft.com/library/bb264487.aspx</Url>
+   <Email>[none]</Email>
+   <MessageLevel Certainty="75">Error</MessageLevel>
+   <File Name="namingrules.dll" Version="12.0.0.0" />
+  </Rule>
+  <Rule TypeName="ParameterNamesShouldMatchBaseDeclaration" Category="Microsoft.Naming" CheckId="CA1725">
+   <Name>Parameter names should match base declaration</Name>
+   <Description>For usability reasons, parameter names in overridden methods should match those of the base declaration.</Description>
+   <Resolution Name="Default">In member {0}, change parameter name {1} to {2} in order to match the identifier as it has been declared in {3}.</Resolution>
+   <Owner />
+   <Url>http://msdn.microsoft.com/library/ms182251.aspx</Url>
+   <Email>[none]</Email>
+   <MessageLevel Certainty="95">Error</MessageLevel>
+   <File Name="namingrules.dll" Version="12.0.0.0" />
+  </Rule>
+  <Rule TypeName="ParameterNamesShouldNotMatchMemberNames" Category="Microsoft.Naming" CheckId="CA1719">
+   <Name>Parameter names should not match member names</Name>
+   <Description>Parameter names should be distinct from member names.</Description>
+   <Resolution Name="Default">Change either member or parameter name {0} so that one differs from the other.</Resolution>
+   <Owner />
+   <Url>http://msdn.microsoft.com/library/ms182252.aspx</Url>
+   <Email>[none]</Email>
+   <MessageLevel Certainty="95">Error</MessageLevel>
+   <File Name="namingrules.dll" Version="12.0.0.0" />
+  </Rule>
+  <Rule TypeName="SpecifyIFormatProvider" Category="Microsoft.Globalization" CheckId="CA1305">
+   <Name>Specify IFormatProvider</Name>
+   <Description>If an overload exists that takes an IFormatProvider argument, it should always be called in favor of an overload that does not. Some methods in the runtime convert a value to or from a string representation and take a string parameter that contains one or more characters, called format specifiers, which indicate how the value is to be converted. If the meaning of the format specifier varies by culture, a formatting object supplies the actual characters used in the string representation. In scenarios where sorting and comparison behavior should never change between cultures, specify CultureInfo.InvariantCulture, otherwise, specify CultureInfo.CurrentCulture.</Description>
+   <Resolution Name="IFormatProviderAlternate">Because the behavior of {0} could vary based on the current user's locale settings, replace this call in {1} with a call to {2}. If the result of {2} will be based on input from the user, specify {3} as the 'IFormatProvider' parameter. Otherwise, if the result will based on input stored and accessed by software, such as when it is loaded from disk or from a database, specify {4}.</Resolution>
+   <Resolution Name="IFormatProviderAlternateString">Because the behavior of {0} could vary based on the current user's locale settings, replace this call in {1} with a call to {2}. If the result of {2} will be displayed to the user, specify {3} as the 'IFormatProvider' parameter. Otherwise, if the result will be stored and accessed by software, such as when it is persisted to disk or to a database, specify {4}.</Resolution>
+   <Owner />
+   <Url>http://msdn.microsoft.com/library/ms182190.aspx</Url>
+   <Email>[none]</Email>
+   <MessageLevel Certainty="95">Error</MessageLevel>
+   <File Name="globalizationrules.dll" Version="12.0.0.0" />
+  </Rule>
+  <Rule TypeName="TypeNamesShouldNotMatchNamespaces" Category="Microsoft.Naming" CheckId="CA1724">
+   <Name>Type names should not match namespaces</Name>
+   <Description>Identifiers which conflict in whole or in part with namespace names should be avoided. Names that describe the purpose or contents of a type are preferred.</Description>
+   <Resolution Name="Default">The type name {0} conflicts in whole or in part with the namespace name '{1}'. Change either name to eliminate the conflict.</Resolution>
+   <Owner />
+   <Url>http://msdn.microsoft.com/library/ms182257.aspx</Url>
+   <Email>[none]</Email>
+   <MessageLevel Certainty="95">Error</MessageLevel>
+   <File Name="namingrules.dll" Version="12.0.0.0" />
+  </Rule>
+  <Rule TypeName="UriPropertiesShouldNotBeStrings" Category="Microsoft.Design" CheckId="CA1056">
+   <Name>URI properties should not be strings</Name>
+   <Description>If a property name contains "uri" or "url" or "urn" and it's typed as string, it should be changed to System.Uri.</Description>
+   <Resolution Name="Default">Change the type of property {0} from string to System.Uri.</Resolution>
+   <Owner />
+   <Url>http://msdn.microsoft.com/library/ms182175.aspx</Url>
+   <Email>[none]</Email>
+   <MessageLevel Certainty="75">Error</MessageLevel>
+   <File Name="designrules.dll" Version="12.0.0.0" />
+  </Rule>
+  <Rule TypeName="UsePropertiesWhereAppropriate" Category="Microsoft.Design" CheckId="CA1024">
+   <Name>Use properties where appropriate</Name>
+   <Description>Properties should be used instead of Get/Set methods in most situations. Methods are preferable to properties in the following situations: the operation is a conversion, is expensive or has an observable side-effect; the order of execution is important; calling the member twice in succession creates different results; a member is static but returns a mutable value; or the member returns an array.</Description>
+   <Resolution Name="Default">Change {0} to a property if appropriate.</Resolution>
+   <Owner />
+   <Url>http://msdn.microsoft.com/library/ms182181.aspx</Url>
+   <Email>[none]</Email>
+   <MessageLevel Certainty="75">Warning</MessageLevel>
+   <File Name="designrules.dll" Version="12.0.0.0" />
+  </Rule>
+  <Rule TypeName="Validate arguments of public methods" Category="Microsoft.Design" CheckId="CA1062">
+   <Name>Validate arguments of public methods</Name>
+   <Description>All reference arguments passed to externally visible methods should be checked against null (Nothing in VB). If appropriate, throw a System.ArgumentNullException when the argument is null.</Description>
+   <Resolution Name="Default">In externally visible method {0}, validate parameter '{1}' before using it.</Resolution>
+   <Owner>RuleOwner</Owner>
+   <Url>http://msdn.microsoft.com/library/ms182182.aspx</Url>
+   <Email />
+   <MessageLevel Certainty="75">Warning</MessageLevel>
+   <File Name="dataflowrules.dll" Version="12.0.0.0" />
+  </Rule>
+ </Rules>
+ <Localized>
+  <String Key="Category">Category</String>
+  <String Key="Certainty">Certainty</String>
+  <String Key="CollapseAll">Collapse All</String>
+  <String Key="CheckId">Check Id</String>
+  <String Key="Error">Error</String>
+  <String Key="Errors">error(s)</String>
+  <String Key="ExpandAll">Expand All</String>
+  <String Key="Help">Help</String>
+  <String Key="Line">Line</String>
+  <String Key="Messages">message(s)</String>
+  <String Key="LocationNotStoredInPdb">[Location not stored in Pdb]</String>
+  <String Key="Project">Project</String>
+  <String Key="Resolution">Resolution</String>
+  <String Key="Rule">Rule</String>
+  <String Key="RuleFile">Rule File</String>
+  <String Key="RuleDescription">Rule Description</String>
+  <String Key="Source">Source</String>
+  <String Key="Status">Status</String>
+  <String Key="Target">Target</String>
+  <String Key="Warning">Warning</String>
+  <String Key="Warnings">warning(s)</String>
+  <String Key="ReportTitle">Code Analysis Report</String>
+ </Localized>
+</FxCopReport>

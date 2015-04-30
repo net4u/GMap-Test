@@ -1,0 +1,35 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2013
+VisualStudioVersion = 12.0.31101.0
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GMap", "GMap\GMap.csproj", "{44A818E6-2B56-40E6-A303-AD4901F510B0}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Jmelosegui.Mvc.Googlemap", "Jmelosegui.Mvc.Googlemap\Jmelosegui.Mvc.Googlemap.csproj", "{5476DBD6-F0EC-4B7A-A616-DB42A7EF7E1B}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = ".nuget", ".nuget", "{3AABA958-06BF-4AD7-BE57-12DFBB2F3A09}"
+	ProjectSection(SolutionItems) = preProject
+		.nuget\NuGet.Config = .nuget\NuGet.Config
+		.nuget\NuGet.exe = .nuget\NuGet.exe
+		.nuget\NuGet.targets = .nuget\NuGet.targets
+	EndProjectSection
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{44A818E6-2B56-40E6-A303-AD4901F510B0}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{44A818E6-2B56-40E6-A303-AD4901F510B0}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{44A818E6-2B56-40E6-A303-AD4901F510B0}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{44A818E6-2B56-40E6-A303-AD4901F510B0}.Release|Any CPU.Build.0 = Release|Any CPU
+		{5476DBD6-F0EC-4B7A-A616-DB42A7EF7E1B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5476DBD6-F0EC-4B7A-A616-DB42A7EF7E1B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5476DBD6-F0EC-4B7A-A616-DB42A7EF7E1B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5476DBD6-F0EC-4B7A-A616-DB42A7EF7E1B}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
