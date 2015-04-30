@@ -147,7 +147,6 @@
         this.latitude = config.lat;
         this.longitude = config.lng;
         this.title = config.title;
-        this.description = congig.description;
         this.icon = config.icon;
         this.clickable = config.clickable ? config.clickable : true;
         this.draggable = config.draggable;

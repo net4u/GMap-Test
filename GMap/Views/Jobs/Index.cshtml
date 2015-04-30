@@ -14,37 +14,38 @@
 <hr/>
 <div class="effect8">
     @{ Html.GoogleMap()
-                .Name("map")
-                .Height(600)
-                .Center(c => c.Latitude(40)
-                              .Longitude(-3))
-                .BindTo<GMap.Models.Jobs, Marker>
-                (Model, mappings => mappings.For<GMap.Models.Jobs>
-                        (
-                            binding => binding.ItemDataBound
+                    .Name("map")
+                    .Height(600)
+                    .Center(c => c.Latitude(40)
+                                  .Longitude(-3))
+                    .BindTo<GMap.Models.Jobs, Marker>
+                    (Model, mappings => mappings.For<GMap.Models.Jobs>
                             (
-                                (marker, Jobs) =>
-                                {
-                                    marker.Latitude = Jobs.Latitudine;
-                                    marker.Longitude = Jobs.Longitudine;
-                                    marker.Title = Jobs.Titlu;
+                                binding => binding.ItemDataBound
+                                (
+                                    (marker, Jobs) =>
+                                    {
+                                        marker.Latitude = Jobs.Latitudine;
+                                        marker.Longitude = Jobs.Longitudine;
+                                        marker.Title = Jobs.Titlu;
 
-                                    marker.Icon = new MarkerImage(String.Format("~/Images/flags/{0}", Jobs.ImagePath)
-                                                                    , new Size(18, 12)
-                                                                    , new Point(0, 0)
-                                                                    , new Point(0, 12));
+                                       //there is no images under the "~/Images/flags/"
+                                       //marker.Icon = new MarkerImage(String.Format("~/Images/flags/{0}", Jobs.ImagePath)
+                                       //                               , new Size(18, 12)
+                                       //                               , new Point(0, 0)
+                                       //                               , new Point(0, 12));
 
-                                    marker.Window = new InfoWindow(marker)
-                                                    {
-                                                        Template =
-                                                        {
+                                       marker.Window = new InfoWindow(marker)
+                                        {
+                                            Template =
+                                                            {
                                                             Content = () => ViewContext.Writer.Write(Jobs.Titlu)
-                                                        }
-                                                    };
-                                }
+                                                            }
+                                        };
+                                    }
+                                )
                             )
-                        )
-                ).Render();
+                    ).Render();
     }
 </div>
 
@@ -121,3 +122,7 @@
 }
 
 </table>
+@section scripts
+{
+    @(Html.GoogleMap().ScriptRegistrar())
+}
